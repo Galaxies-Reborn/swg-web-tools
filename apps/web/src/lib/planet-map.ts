@@ -50,9 +50,24 @@ export class PlanetOverview {
     return this.meta.overviewSpacing;
   }
 
-  /** Sample column/row for a world coordinate, clamped into the map. */
+  /**
+   * Sample column/row for a world coordinate, clamped into the map.
+   *
+   * Floor, not round. An overview sample is not a point measured at its own
+   * coordinate -- it is the aggregate of a 32 m BLOCK of the 8 m bake, so
+   * sample c covers [originX + 32c, originX + 32c + 32) and floor is what
+   * names the block a coordinate falls in.
+   *
+   * Rounding instead treated the sample as a point sitting on the block's near
+   * edge, which put the lookup half a cell out of step with the mesh, whose
+   * vertices sit at the block CENTRES. Measured over all 512 columns, round
+   * resolved 511 of them to the neighbouring cell; floor resolves all 512
+   * correctly. That misregistration is why the site marker hung above or sank
+   * into the ground under it, and why the ground/relief/water readings
+   * described a spot 32 m away from the one clicked.
+   */
   private cell(world: number, origin: number): number {
-    const index = Math.round((world - origin) / this.spacing);
+    const index = Math.floor((world - origin) / this.spacing);
     return Math.min(Math.max(index, 0), this.samples - 1);
   }
 
