@@ -97,38 +97,183 @@ export class TerrainTile {
   }
 }
 
-/** Name a tile the way the bake names it, so a site resolves without an index. */
-export function tileName(planet: string, x: number, z: number): string {
-  return `${planet}_${Math.round(x)}_${Math.round(z)}`;
+// ---------------------------------------------------------------------------
+// Cutting a site out of the whole-planet bake.
+//
+// A site used to need its own `tre-extract terrain --centre X,Z` run, so any
+// coordinate nobody had baked showed the flat grid -- which is every coordinate
+// but one. The whole-planet bake covers the entire world at the same 8 m
+// spacing, so there is nothing left to bake per site: the ground for a plan is
+// a window cut out of it.
+//
+// Planet tiles are cached across sites. Moving a plan 200 m usually needs the
+// same one or two 128 KB tiles, and re-fetching them on every nudge would make
+// dragging a site feel like loading a level.
+// ---------------------------------------------------------------------------
+
+/** What `planet.json` says. Only the fields this cut needs are described. */
+interface PlanetTileMeta {
+  mapWidth: number;
+  spacing: number;
+  samples: number;
+  tileSamples: number;
+  tiles: number;
+  originX: number;
+  originZ: number;
 }
 
-export async function loadTerrainTile(name: string): Promise<TerrainTile | null> {
-  const base = `${ASSET_BASE}/terrain/${name}`;
-  try {
-    const metaResponse = await fetch(`${base}.json`);
-    if (!metaResponse.ok) return null;
-    const meta = (await metaResponse.json()) as TerrainTileMeta;
+interface PlanetTileData {
+  heights: Int16Array;
+  flags: Uint8Array;
+  width: number;
+}
 
-    const [heightBuffer, flagBuffer] = await Promise.all([
-      fetch(`${ASSET_BASE}/terrain/${meta.height}`).then((r) => r.arrayBuffer()),
-      fetch(`${ASSET_BASE}/terrain/${meta.flags}`).then((r) => r.arrayBuffer()),
-    ]);
+const planetMetaCache = new Map<string, Promise<PlanetTileMeta | null>>();
+const planetTileCache = new Map<string, Promise<PlanetTileData | null>>();
 
-    const expected = meta.samples * meta.samples;
-    const heights = new Int16Array(heightBuffer);
-    const flags = new Uint8Array(flagBuffer);
-    if (heights.length !== expected || flags.length !== expected) {
-      // A truncated tile would render as a torn mesh with a plausible-looking
-      // corner, which is worse than no terrain at all.
-      console.error(
-        `terrain tile ${name} is the wrong size: ${heights.length}/${flags.length} ` +
-          `samples, expected ${expected}`,
-      );
-      return null;
-    }
-    return new TerrainTile(meta, heights, flags);
-  } catch {
-    // No tile baked for this site. The planner falls back to flat ground.
-    return null;
+function planetMeta(planet: string): Promise<PlanetTileMeta | null> {
+  let entry = planetMetaCache.get(planet);
+  if (!entry) {
+    entry = (async () => {
+      const response = await fetch(`${ASSET_BASE}/terrain/${planet}/planet.json`);
+      if (!response.ok) return null;
+      return (await response.json()) as PlanetTileMeta;
+    })().catch(() => null);
+    planetMetaCache.set(planet, entry);
   }
+  return entry;
+}
+
+function planetTile(
+  planet: string,
+  tileZ: number,
+  tileX: number,
+  meta: PlanetTileMeta,
+): Promise<PlanetTileData | null> {
+  const key = `${planet}/${tileZ}_${tileX}`;
+  let entry = planetTileCache.get(key);
+  if (!entry) {
+    entry = (async () => {
+      const base = `${ASSET_BASE}/terrain/${planet}/${tileZ}_${tileX}`;
+      const [heightResponse, flagResponse] = await Promise.all([
+        fetch(`${base}.height`),
+        fetch(`${base}.flags`),
+      ]);
+      if (!heightResponse.ok || !flagResponse.ok) return null;
+      const heights = new Int16Array(await heightResponse.arrayBuffer());
+      const flags = new Uint8Array(await flagResponse.arrayBuffer());
+      // The last row and column of tiles are short when the planet's sample
+      // count is not a whole number of tiles, so the size is derived rather
+      // than assumed -- a wrong width would shear the ground diagonally.
+      const width = Math.min(meta.tileSamples, meta.samples - tileX * meta.tileSamples);
+      const height = Math.min(meta.tileSamples, meta.samples - tileZ * meta.tileSamples);
+      if (heights.length !== width * height || flags.length !== width * height) {
+        console.error(
+          `planet tile ${key} is the wrong size: ${heights.length}/${flags.length}, ` +
+            `expected ${width * height}`,
+        );
+        return null;
+      }
+      return { heights, flags, width };
+    })().catch(() => null);
+    planetTileCache.set(key, entry);
+  }
+  return entry;
+}
+
+/**
+ * The ground around a site, cut out of the whole-planet bake.
+ *
+ * `span` is the width of the square in metres. It is snapped outward to the
+ * planet's own sample grid so the samples returned are the baked ones rather
+ * than an interpolation of them, and clamped to the planet, so a site near the
+ * edge of the world gets a window that shifts inwards instead of a torn one.
+ */
+export async function loadSiteTerrain(
+  planet: string,
+  centreX: number,
+  centreZ: number,
+  span: number,
+): Promise<TerrainTile | null> {
+  const meta = await planetMeta(planet);
+  if (!meta) return null;
+
+  const { spacing } = meta;
+  const samples = Math.min(Math.round(span / spacing) + 1, meta.samples);
+  const clampStart = (world: number, origin: number) =>
+    Math.min(
+      Math.max(Math.round((world - span / 2 - origin) / spacing), 0),
+      meta.samples - samples,
+    );
+  const col0 = clampStart(centreX, meta.originX);
+  const row0 = clampStart(centreZ, meta.originZ);
+
+  const tileZ0 = Math.floor(row0 / meta.tileSamples);
+  const tileZ1 = Math.floor((row0 + samples - 1) / meta.tileSamples);
+  const tileX0 = Math.floor(col0 / meta.tileSamples);
+  const tileX1 = Math.floor((col0 + samples - 1) / meta.tileSamples);
+
+  const loaded = new Map<string, PlanetTileData>();
+  const pending: Promise<void>[] = [];
+  for (let tileZ = tileZ0; tileZ <= tileZ1; tileZ += 1) {
+    for (let tileX = tileX0; tileX <= tileX1; tileX += 1) {
+      pending.push(
+        planetTile(planet, tileZ, tileX, meta).then((data) => {
+          if (data) loaded.set(`${tileZ}_${tileX}`, data);
+        }),
+      );
+    }
+  }
+  await Promise.all(pending);
+  // Every tile the window touches has to be there. A partial answer would draw
+  // real ground beside a flat slab and look like terrain rather than a failure.
+  const wanted = (tileZ1 - tileZ0 + 1) * (tileX1 - tileX0 + 1);
+  if (loaded.size !== wanted) return null;
+
+  const heights = new Int16Array(samples * samples);
+  const flags = new Uint8Array(samples * samples);
+  for (let row = 0; row < samples; row += 1) {
+    const worldRow = row0 + row;
+    const tileZ = Math.floor(worldRow / meta.tileSamples);
+    const localRow = worldRow - tileZ * meta.tileSamples;
+    for (let col = 0; col < samples; col += 1) {
+      const worldCol = col0 + col;
+      const tileX = Math.floor(worldCol / meta.tileSamples);
+      const tile = loaded.get(`${tileZ}_${tileX}`);
+      if (!tile) continue;
+      const source = localRow * tile.width + (worldCol - tileX * meta.tileSamples);
+      const target = row * samples + col;
+      heights[target] = tile.heights[source];
+      flags[target] = tile.flags[source];
+    }
+  }
+
+  const originX = meta.originX + col0 * spacing;
+  const originZ = meta.originZ + row0 * spacing;
+  let lowest = Infinity;
+  let highest = -Infinity;
+  for (let i = 0; i < heights.length; i += 1) {
+    const metres = heights[i] / 10;
+    if (metres < lowest) lowest = metres;
+    if (metres > highest) highest = metres;
+  }
+
+  return new TerrainTile(
+    {
+      planet,
+      originX,
+      originZ,
+      centreX: originX + ((samples - 1) * spacing) / 2,
+      centreZ: originZ + ((samples - 1) * spacing) / 2,
+      span: (samples - 1) * spacing,
+      spacing,
+      samples,
+      minHeight: lowest,
+      maxHeight: highest,
+      height: `${planet}/cut`,
+      flags: `${planet}/cut`,
+    },
+    heights,
+    flags,
+  );
 }

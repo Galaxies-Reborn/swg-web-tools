@@ -30,7 +30,7 @@ import {
   type CityStructure,
 } from '@precu/shared';
 
-import { loadTerrainTile, tileName, type TerrainTile } from '@/lib/terrain';
+import { loadSiteTerrain, type TerrainTile } from '@/lib/terrain';
 
 import { Empty, PageHeader, Stat } from '@/components/shell';
 import { api, ApiError } from '@/lib/api';
@@ -145,9 +145,13 @@ export default function CityPlannerPage() {
     setWaypoint(`${scene ?? ''} ${x} ${z}`.trim());
   }, []);
 
-  // Fetch the baked ground whenever the site changes. A tile is baked offline
-  // per site, so a waypoint with no tile is the normal case rather than an
-  // error, and it says so instead of failing.
+  // Fetch the ground whenever the site moves. It is cut out of the planet-wide
+  // bake, which covers the whole world, so any coordinate on a baked planet has
+  // ground -- there is no per-site bake to be missing any more. Only a planet
+  // that has never been baked falls back to the flat grid.
+  //
+  // A little wider than the city, so the ground does not stop at the boundary
+  // the plan is being fitted against.
   useEffect(() => {
     if (!anchor) {
       setTerrain(null);
@@ -156,20 +160,21 @@ export default function CityPlannerPage() {
     }
     let cancelled = false;
     setTerrainNote('Loading ground...');
-    void loadTerrainTile(tileName(scene, anchor.x, anchor.z)).then((tile) => {
+    const span = cityRadius(rank) * 2 + 200;
+    void loadSiteTerrain(scene, anchor.x, anchor.z, span).then((tile) => {
       if (cancelled) return;
       setTerrain(tile);
       setTerrainNote(
         tile
           ? null
-          : `No ground baked for ${scene} ${Math.round(anchor.x)}, ${Math.round(anchor.z)}. ` +
-              'Showing the flat grid.',
+          : `No terrain baked for ${scene}. Showing the flat grid. ` +
+              `Run: tre-extract terrain --planet ${scene} --planet-wide`,
       );
     });
     return () => {
       cancelled = true;
     };
-  }, [anchor, scene]);
+  }, [anchor, scene, rank]);
 
   /**
    * Read a waypoint the way a player would paste one.
