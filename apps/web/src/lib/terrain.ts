@@ -27,6 +27,11 @@ export interface TerrainTileMeta {
   maxHeight: number;
   height: string;
   flags: string;
+  /**
+   * Metres above sea level that this tile's zero means, when it has been
+   * rebased onto a site. Absent on a tile that is already in world terms.
+   */
+  datum?: number;
 }
 
 /** Flag bits, as written by the bake. */
@@ -188,6 +193,19 @@ function planetTile(
  * planet's own sample grid so the samples returned are the baked ones rather
  * than an interpolation of them, and clamped to the planet, so a site near the
  * edge of the world gets a window that shifts inwards instead of a torn one.
+ *
+ * The tile comes back in the PLANNER'S space, not the world's, because that is
+ * the only space the planner has. A plan's structures are stored relative to
+ * its site and blockers are re-centred onto it, so a tile carrying world
+ * origins would be indexed with local coordinates, clamp to its own corner and
+ * hand every building on the site the same altitude -- which is exactly a
+ * building floating over the ground it is supposed to stand on.
+ *
+ * So two things are rebased. Horizontally, the origin is stated relative to the
+ * site, so local (0, 0) is the site itself. Vertically, heights are relative to
+ * the ground AT the site, so y = 0 is what a planner draws its buildable circle
+ * and its grid on. The world altitude that zero stands for is kept in `datum`,
+ * so nothing is actually lost.
  */
 export async function loadSiteTerrain(
   planet: string,
@@ -248,8 +266,43 @@ export async function loadSiteTerrain(
     }
   }
 
-  const originX = meta.originX + col0 * spacing;
-  const originZ = meta.originZ + row0 * spacing;
+  // The window is snapped to the planet's sample grid, so its origin is up to
+  // one sample away from the site. Stating it relative to the site rather than
+  // assuming the site is at the centre keeps the lookup exact.
+  const originX = meta.originX + col0 * spacing - centreX;
+  const originZ = meta.originZ + row0 * spacing - centreZ;
+
+  /**
+   * The ground the site itself stands on, which becomes y = 0.
+   *
+   * Read through the tile's own bilinear sampling rather than off the nearest
+   * sample, because that is how every other height on this tile will be read.
+   * The site almost never lands on a sample -- it is a waypoint, not a grid
+   * point -- so taking the nearest one instead put the whole plan out by
+   * whatever the ground does in between, measured at 3.7 m on the first site
+   * tried, with the site itself reading -4.5 m rather than 0.
+   */
+  const worldOriginX = meta.originX + col0 * spacing;
+  const worldOriginZ = meta.originZ + row0 * spacing;
+  const worldMeta: TerrainTileMeta = {
+    planet,
+    originX: worldOriginX,
+    originZ: worldOriginZ,
+    centreX: worldOriginX + ((samples - 1) * spacing) / 2,
+    centreZ: worldOriginZ + ((samples - 1) * spacing) / 2,
+    span: (samples - 1) * spacing,
+    spacing,
+    samples,
+    minHeight: 0,
+    maxHeight: 0,
+    height: `${planet}/cut`,
+    flags: `${planet}/cut`,
+  };
+  const datumDm = Math.round(
+    new TerrainTile(worldMeta, heights, flags).heightAt(centreX, centreZ) * 10,
+  );
+  for (let i = 0; i < heights.length; i += 1) heights[i] -= datumDm;
+
   let lowest = Infinity;
   let highest = -Infinity;
   for (let i = 0; i < heights.length; i += 1) {
@@ -272,6 +325,7 @@ export async function loadSiteTerrain(
       maxHeight: highest,
       height: `${planet}/cut`,
       flags: `${planet}/cut`,
+      datum: datumDm / 10,
     },
     heights,
     flags,
