@@ -44,6 +44,16 @@ export interface StructureFootprint {
   rows: string[];
   widthMetres: number;
   depthMetres: number;
+  /**
+   * Metres the ground may vary across the footprint before the game refuses
+   * the site. `LotManager::canPlace` grows a box by the terrain under the
+   * measured cells and fails when that box is taller than this.
+   */
+  structureTolerance: number;
+  /** Read from the same chunk, and never consulted -- dead in the server too. */
+  hardTolerance: number;
+  /** Cells whose ground counts towards the height test: [x0, z0, x1, z1). */
+  boxTest: [number, number, number, number];
 }
 
 export interface CityStructure {
@@ -275,4 +285,260 @@ export function maxCivicStructures(rank: number, decorSpecialisation = false): n
  */
 export function maxDecorations(rank: number, decorSpecialisation = false): number {
   return rank * (decorSpecialisation ? 20 : 15);
+}
+
+// ---------------------------------------------------------------------------
+// Placing a structure on real ground.
+//
+// Ported from LotManager::canPlace, sharedObject/src/shared/lot/LotManager.cpp
+// line 208, because a planner that invents its own rule for what fits is worse
+// than one that offers none.
+//
+// Two things about the game's behaviour are worth stating plainly, because both
+// are the opposite of what a planner might assume:
+//
+// A structure DOES NOT flatten the terrain under it. The mechanism to do that
+// exists -- a .lay of terrain affectors installed at run time -- but every
+// player building inherits `terrainModificationFileName = ""` from
+// shared_base_building.tpf and none of them overrides it. POI buildings,
+// theatres and faction headquarters do flatten the ground; houses, city halls
+// and the rest never do.
+//
+// And it does not follow the ground either: shared_base_player_building.tpf
+// sets `snapToTerrain = false`, so the building keeps the exact height the
+// placement test returned. That height is the TOP of the ground under the
+// footprint, so a structure on a slope stands level with its highest lot and
+// overhangs the ground falling away from it. That overhang is what the game
+// actually looks like, not a defect to be corrected.
+// ---------------------------------------------------------------------------
+
+/** What one lot of a rotated footprint reserves, and where it sits. */
+export interface FootprintCell {
+  /** Lots east of the anchor lot. */
+  dx: number;
+  /** Lots south of the anchor lot. */
+  dz: number;
+  /** 'F' the structure itself, 'H' its hard-reserved buffer, '.' free. */
+  lot: string;
+  /** Whether this cell's ground counts towards the height test. */
+  measured: boolean;
+}
+
+/** A rotation in radians, as one of the game's four rotation types. */
+export function quarterTurns(rotation: number): number {
+  const quarter = Math.round(rotation / (Math.PI / 2));
+  return ((quarter % 4) + 4) % 4;
+}
+
+/**
+ * The lots a footprint reserves once rotated, relative to its anchor lot.
+ *
+ * The index arithmetic is transcribed from the four rotation branches of
+ * LotManager::canPlace rather than re-derived. The footprint's rows are already
+ * flipped in Z at RT_0, and at the quarter turns the pivot is swapped rather
+ * than rotated -- so a general grid rotation gets the symmetric footprints
+ * right and the 7x9 ones wrong, which is the worst way to be wrong.
+ */
+export function footprintCells(
+  footprint: StructureFootprint,
+  turns: number,
+): FootprintCell[] {
+  const w = footprint.width;
+  const h = footprint.height;
+  const rows = footprint.rows;
+  const [bx0, bz0, bx1, bz1] = footprint.boxTest;
+  const cells: FootprintCell[] = [];
+
+  const push = (dx: number, dz: number, sx: number, sz: number) => {
+    // The grid is square and the indices come from the footprint's own
+    // dimensions, so this cannot miss -- but the checker cannot know that, and
+    // a silent '.' would read as free ground rather than as a bug.
+    const row = rows[sz];
+    if (row === undefined) throw new Error(`footprint row ${sz} is missing`);
+    const lot = row[sx];
+    if (lot === undefined) throw new Error(`footprint cell ${sx},${sz} is missing`);
+    cells.push({
+      dx,
+      dz,
+      lot,
+      // Rectangle2d::isWithin, on the footprint's own cell indices.
+      measured: sx >= bx0 && sx < bx1 && sz >= bz0 && sz < bz1,
+    });
+  };
+
+  switch (turns) {
+    case 1: {
+      // RT_90
+      const pivotX = footprint.pivotZ;
+      const pivotZ = footprint.pivotX;
+      for (let j = 0; j < w; j += 1) {
+        for (let i = 0; i < h; i += 1) {
+          push(-pivotX + i, -(w - 1 - pivotZ) + j, w - 1 - j, h - 1 - i);
+        }
+      }
+      break;
+    }
+    case 2: {
+      // RT_180
+      const pivotX = footprint.pivotX;
+      const pivotZ = h - 1 - footprint.pivotZ;
+      for (let j = 0; j < h; j += 1) {
+        for (let i = 0; i < w; i += 1) {
+          push(-(w - 1 - pivotX) + i, -pivotZ + j, w - 1 - i, j);
+        }
+      }
+      break;
+    }
+    case 3: {
+      // RT_270
+      const pivotX = h - 1 - footprint.pivotZ;
+      const pivotZ = footprint.pivotX;
+      for (let j = 0; j < w; j += 1) {
+        for (let i = 0; i < h; i += 1) {
+          push(-pivotX + i, -pivotZ + j, j, i);
+        }
+      }
+      break;
+    }
+    default: {
+      // RT_0
+      const pivotX = footprint.pivotX;
+      const pivotZ = footprint.pivotZ;
+      for (let j = 0; j < h; j += 1) {
+        for (let i = 0; i < w; i += 1) {
+          push(-pivotX + i, -pivotZ + j, i, h - 1 - j);
+        }
+      }
+      break;
+    }
+  }
+
+  return cells;
+}
+
+/** Whatever the planner is standing the structure on. */
+export interface GroundSampler {
+  /** Metres above the plan's datum. */
+  heightAt(x: number, z: number): number;
+  isWater(x: number, z: number): boolean;
+}
+
+export type PlacementRefusal = 'water' | 'too-steep' | 'nothing-measured';
+
+export interface PlacementVerdict {
+  ok: boolean;
+  /** Where the structure stands: the top of the ground under its footprint. */
+  height: number;
+  /** How much the ground varies across the measured lots. */
+  relief: number;
+  tolerance: number;
+  reason: PlacementRefusal | null;
+  /** What the game tells the player, verbatim, or null when it fits. */
+  message: string | null;
+}
+
+/**
+ * What the game says when the ground will not take a structure.
+ *
+ * A wet lot and too much relief both return -9999 from canPlaceStructure, and
+ * player_building.java:161 turns that into this one string. The planner keeps
+ * the two apart in `reason` so it can be more helpful than the game was, but it
+ * should not put words in the game's mouth.
+ */
+export const NO_ROOM_MESSAGE = 'There is no room to place the structure here.';
+
+/**
+ * Can this structure stand here, and if so at what height?
+ *
+ * Mirrors LotManager::canPlace: every lot the footprint covers is checked for
+ * water, the ground under the measured lots is accumulated into a box, and the
+ * site is refused when that box is taller than the footprint's tolerance. The
+ * height returned is the top of the box, which is where the game stands the
+ * building.
+ *
+ * One honest difference: the game measures a terrain CHUNK's own vertices,
+ * which are 4 m apart. The bake this reads is 8 m, so a rise between two
+ * samples is invisible to it and a marginal site can read slightly flatter here
+ * than it does in game.
+ */
+export function probePlacement(
+  footprint: StructureFootprint,
+  x: number,
+  z: number,
+  rotation: number,
+  ground: GroundSampler,
+): PlacementVerdict {
+  const cells = footprintCells(footprint, quarterTurns(rotation));
+  const lot = METRES_PER_CELL;
+  const anchorX = Math.floor(x / lot);
+  const anchorZ = Math.floor(z / lot);
+
+  let low = Infinity;
+  let high = -Infinity;
+
+  for (const cell of cells) {
+    const west = (anchorX + cell.dx) * lot;
+    const north = (anchorZ + cell.dz) * lot;
+    // The corners plus the middle. The game asks a whole chunk at once; this
+    // is the same square, sampled at the resolution the bake actually has.
+    const points: [number, number][] = [
+      [west, north],
+      [west + lot, north],
+      [west, north + lot],
+      [west + lot, north + lot],
+      [west + lot / 2, north + lot / 2],
+    ];
+
+    // Water is tested on every lot the footprint covers, including the ones
+    // that reserve nothing. That is the order the game checks in, and it is
+    // why a house cannot straddle a shoreline even where its walls would miss
+    // the water.
+    for (const [px, pz] of points) {
+      if (ground.isWater(px, pz)) {
+        return {
+          ok: false,
+          height: 0,
+          relief: 0,
+          tolerance: footprint.structureTolerance,
+          reason: 'water',
+          message: NO_ROOM_MESSAGE,
+        };
+      }
+    }
+
+    // LT_nothing reserves nothing and never grows the box, and neither does a
+    // cell outside the box test rect.
+    if (cell.lot === '.' || !cell.measured) continue;
+
+    for (const [px, pz] of points) {
+      const y = ground.heightAt(px, pz);
+      if (y < low) low = y;
+      if (y > high) high = y;
+    }
+  }
+
+  if (high < low) {
+    // Nothing was measured. The game treats that as a failure rather than as a
+    // flat site: its box keeps the inverted bounds it started with, and the
+    // negative-height check rejects it.
+    return {
+      ok: false,
+      height: 0,
+      relief: 0,
+      tolerance: footprint.structureTolerance,
+      reason: 'nothing-measured',
+      message: NO_ROOM_MESSAGE,
+    };
+  }
+
+  const relief = high - low;
+  const fits = relief <= footprint.structureTolerance;
+  return {
+    ok: fits,
+    height: high,
+    relief,
+    tolerance: footprint.structureTolerance,
+    reason: fits ? null : 'too-steep',
+    message: fits ? null : NO_ROOM_MESSAGE,
+  };
 }

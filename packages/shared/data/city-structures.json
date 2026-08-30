@@ -24,7 +24,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "tcg_relaxation_pool",
@@ -56,7 +64,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_jedi_meditation_room_n",
@@ -88,7 +104,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_sith_meditation_room_n",
@@ -119,7 +143,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_corellia_small_style_1",
@@ -153,7 +185,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_corellia_small_style_1_floorplan_2",
@@ -187,7 +227,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_corellia_small_style_2",
@@ -221,7 +269,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_corellia_small_style_2_floorplan_2",
@@ -255,7 +311,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_corellia_medium_style_1",
@@ -289,7 +353,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_corellia_medium_style_2",
@@ -324,7 +396,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_corellia_large_style_1",
@@ -359,7 +439,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_corellia_large_style_2",
@@ -393,7 +481,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_general_small_style_1",
@@ -424,7 +520,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_general_small_style_1_floorplan_2",
@@ -455,7 +559,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_general_small_style_2",
@@ -486,7 +598,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_general_small_style_2_floorplan_2",
@@ -517,7 +637,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_general_medium_style_1",
@@ -548,7 +676,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_general_medium_style_2",
@@ -580,7 +716,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_general_large_style_1",
@@ -612,7 +756,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_general_large_style_2",
@@ -643,7 +795,15 @@
         ".H."
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_naboo_small",
@@ -677,7 +837,15 @@
         "FFFH"
       ],
       "widthMetres": 32,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        4,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_naboo_small",
@@ -713,7 +881,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_naboo_medium",
@@ -772,7 +948,15 @@
         "HHHFHHH"
       ],
       "widthMetres": 56,
-      "depthMetres": 48
+      "depthMetres": 48,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        6
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_naboo_large",
@@ -807,7 +991,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_tatt_style01_small",
@@ -842,7 +1034,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_tatt_style01_small",
@@ -878,7 +1078,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_tatt_style01_med",
@@ -914,7 +1122,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_tatt_style01_large",
@@ -948,7 +1164,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "clothing_factory",
@@ -978,7 +1202,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "food_factory",
@@ -1008,7 +1240,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "item_factory",
@@ -1040,7 +1280,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "structure_factory",
@@ -1072,7 +1320,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        5
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "fusion_generator",
@@ -1102,7 +1358,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        5,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "photobio_generator",
@@ -1132,7 +1396,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "solar_generator",
@@ -1160,7 +1432,15 @@
         "F"
       ],
       "widthMetres": 8,
-      "depthMetres": 8
+      "depthMetres": 8,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        1,
+        1
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "geothermal_generator",
@@ -1190,7 +1470,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "wind_generator",
@@ -1218,7 +1506,15 @@
         "F"
       ],
       "widthMetres": 8,
-      "depthMetres": 8
+      "depthMetres": 8,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        1,
+        1
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "gas_mine_small",
@@ -1248,7 +1544,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "gas_mine",
@@ -1278,7 +1582,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "gas_mine_heavy",
@@ -1308,7 +1620,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "gas_mine_elite",
@@ -1336,7 +1656,15 @@
         "F"
       ],
       "widthMetres": 8,
-      "depthMetres": 8
+      "depthMetres": 8,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        1,
+        1
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "liquid_mine",
@@ -1366,7 +1694,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        5,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "liquid_mine_medium",
@@ -1396,7 +1732,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "liquid_mine_heavy",
@@ -1426,7 +1770,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "liquid_mine_elite",
@@ -1454,7 +1806,15 @@
         "F"
       ],
       "widthMetres": 8,
-      "depthMetres": 8
+      "depthMetres": 8,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        1,
+        1
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "moisture_mine",
@@ -1484,7 +1844,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "moisture_mine_medium",
@@ -1514,7 +1882,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "moisture_mine_heavy",
@@ -1544,7 +1920,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "moisture_mine_elite",
@@ -1572,7 +1956,15 @@
         "F"
       ],
       "widthMetres": 8,
-      "depthMetres": 8
+      "depthMetres": 8,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        1,
+        1
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "small_ore_mine",
@@ -1602,7 +1994,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        5,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "ore_mine",
@@ -1632,7 +2032,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        5,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "heavy_ore_mine",
@@ -1662,7 +2070,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        5,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "elite_ore_mine",
@@ -1692,7 +2108,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "creature_farm",
@@ -1720,7 +2144,15 @@
         "F"
       ],
       "widthMetres": 8,
-      "depthMetres": 8
+      "depthMetres": 8,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        1,
+        1
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "flora_farm_small",
@@ -1750,7 +2182,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "flora_farm",
@@ -1780,7 +2220,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "flora_farm_heavy",
@@ -1810,7 +2258,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 3,
+      "hardTolerance": 3,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "installation_n",
     "nameKey": "flora_farm_elite",
@@ -1845,7 +2301,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 64
+      "depthMetres": 64,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        8
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "association_hall_general",
@@ -1883,7 +2347,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 64
+      "depthMetres": 64,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        8
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "association_hall_general",
@@ -1918,7 +2390,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 64
+      "depthMetres": 64,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        8
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "association_hall_general",
@@ -1957,7 +2437,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 64
+      "depthMetres": 64,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        8
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "association_hall_general",
@@ -1993,7 +2481,15 @@
         "HHFFFFFHH"
       ],
       "widthMetres": 72,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        9,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "association_hall_general",
@@ -2241,7 +2737,15 @@
         "F"
       ],
       "widthMetres": 8,
-      "depthMetres": 8
+      "depthMetres": 8,
+      "structureTolerance": 4,
+      "hardTolerance": 4,
+      "boxTest": [
+        0,
+        0,
+        1,
+        1
+      ]
     },
     "nameTable": null,
     "nameKey": null,
@@ -2451,7 +2955,15 @@
         "HFH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 4,
+      "hardTolerance": 4,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "merchant_tent",
@@ -2481,7 +2993,15 @@
         "HFH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 4,
+      "hardTolerance": 4,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "merchant_tent",
@@ -2511,7 +3031,15 @@
         "HFH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 4,
+      "hardTolerance": 4,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "merchant_tent",
@@ -2547,7 +3075,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 72
+      "depthMetres": 72,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        9
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cityhall",
@@ -2587,7 +3123,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 72
+      "depthMetres": 72,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        9
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cityhall",
@@ -2627,7 +3171,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 72
+      "depthMetres": 72,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        9
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cityhall",
@@ -2660,7 +3212,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "bank",
@@ -2694,7 +3254,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "bank",
@@ -2728,7 +3296,15 @@
         "HHH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "bank",
@@ -2761,7 +3337,15 @@
         "FFFF"
       ],
       "widthMetres": 32,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        4,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "barn",
@@ -2795,7 +3379,15 @@
         "HHHHHHH"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cantina",
@@ -2833,7 +3425,15 @@
         "HHHHHHH"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cantina",
@@ -2871,7 +3471,15 @@
         "HHHHHHH"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cantina",
@@ -2906,7 +3514,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cloning",
@@ -2942,7 +3558,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cloning",
@@ -2977,7 +3601,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "cloning",
@@ -3011,7 +3643,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "diner",
@@ -3043,7 +3683,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "hospital",
@@ -3079,7 +3727,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "hospital",
@@ -3114,7 +3770,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "hospital",
@@ -3151,7 +3815,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 48
+      "depthMetres": 48,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        6
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "theater",
@@ -3188,7 +3860,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 48
+      "depthMetres": 48,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        6
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "theater",
@@ -3225,7 +3905,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 48
+      "depthMetres": 48,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        6
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "theater",
@@ -3260,7 +3948,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "shuttleport",
@@ -3296,7 +3992,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "shuttleport",
@@ -3332,7 +4036,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "shuttleport",
@@ -3369,7 +4081,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3406,7 +4126,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3443,7 +4171,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3480,7 +4216,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3517,7 +4261,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3552,7 +4304,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3587,7 +4347,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3622,7 +4390,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3657,7 +4433,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3692,7 +4476,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3725,7 +4517,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3758,7 +4558,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3791,7 +4599,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3824,7 +4640,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3857,7 +4681,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3894,7 +4726,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3932,7 +4772,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -3970,7 +4818,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4008,7 +4864,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4046,7 +4910,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4082,7 +4954,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4118,7 +4998,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4154,7 +5042,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4190,7 +5086,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4226,7 +5130,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4260,7 +5172,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4294,7 +5214,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4328,7 +5256,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4362,7 +5298,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4396,7 +5340,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4434,7 +5386,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4472,7 +5432,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4510,7 +5478,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4548,7 +5524,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4586,7 +5570,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4622,7 +5614,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4658,7 +5658,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4694,7 +5702,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4730,7 +5746,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4766,7 +5790,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4800,7 +5832,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4834,7 +5874,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4868,7 +5916,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4902,7 +5958,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4936,7 +6000,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -4974,7 +6046,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5006,7 +6086,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5036,7 +6124,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5070,7 +6166,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5102,7 +6206,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5132,7 +6244,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5166,7 +6286,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5198,7 +6326,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5228,7 +6364,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden",
@@ -5260,7 +6404,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "ply_tatooine_garage_s01",
@@ -5296,7 +6448,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "ply_naboo_garage_s01",
@@ -5332,7 +6492,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "ply_corellia_garage_s01",
@@ -5550,7 +6718,15 @@
         "HHHHHHHH"
       ],
       "widthMetres": 64,
-      "depthMetres": 64
+      "depthMetres": 64,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        2,
+        2,
+        4,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_mustafar_house_lg_n",
@@ -5580,7 +6756,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden_imperial_01",
@@ -5618,7 +6802,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 6,
+      "hardTolerance": 6,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "garden_rebel_01",
@@ -5657,7 +6849,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_tatt_style01_small_window",
@@ -5692,7 +6892,15 @@
         ".H."
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "housing_naboo_window_small",
@@ -5727,7 +6935,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "house_generic_window_small",
@@ -5758,7 +6974,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_generic_medium_windowed",
@@ -5789,7 +7013,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_generic_small_window_style_03",
@@ -5820,7 +7052,15 @@
         "FFF"
       ],
       "widthMetres": 24,
-      "depthMetres": 32
+      "depthMetres": 32,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        3,
+        4
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_generic_medium_windowed_s02",
@@ -5852,7 +7092,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_generic_large_window_s01",
@@ -5884,7 +7132,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_generic_large_window_s02",
@@ -5918,7 +7174,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_hangar_n",
@@ -5955,7 +7219,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 80
+      "depthMetres": 80,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        10
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_atat_n",
@@ -5989,7 +7261,15 @@
         "HFFFFFFH"
       ],
       "widthMetres": 64,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        8,
+        7
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_tcg_emperors_spire_n",
@@ -6023,7 +7303,15 @@
         "HFFFFFFH"
       ],
       "widthMetres": 64,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        8,
+        7
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_tcg_rebel_spire_n",
@@ -6060,7 +7348,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 80
+      "depthMetres": 80,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        10
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_sandcrawler_n",
@@ -6090,7 +7386,15 @@
         "HFH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 4,
+      "hardTolerance": 4,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "merchant_tent_pgc",
@@ -6122,7 +7426,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_tcg_commando_bunker_n",
@@ -6156,7 +7468,15 @@
         "HFFFFFFH"
       ],
       "widthMetres": 64,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        8,
+        7
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_tcg_vehicle_garage_n",
@@ -6188,7 +7508,15 @@
         "HHHHH"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_tcg_vip_bunker_n",
@@ -6222,7 +7550,15 @@
         "FFFFFFF"
       ],
       "widthMetres": 56,
-      "depthMetres": 56
+      "depthMetres": 56,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        7
+      ]
     },
     "nameTable": "static_item_n",
     "nameKey": "player_house_tcg_8_bespin_house_n",
@@ -6262,7 +7598,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_tcg_8_yoda_house_n",
@@ -6303,7 +7647,15 @@
         "FFFFF"
       ],
       "widthMetres": 40,
-      "depthMetres": 48
+      "depthMetres": 48,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        5,
+        6
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_yt1300_n",
@@ -6343,7 +7695,15 @@
         "FFFFFF"
       ],
       "widthMetres": 48,
-      "depthMetres": 40
+      "depthMetres": 40,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        6,
+        5
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "player_house_tree_house_01_n",
@@ -6381,7 +7741,15 @@
         "HFH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 4,
+      "hardTolerance": 4,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "ns_hut",
@@ -6419,7 +7787,15 @@
         "HFH"
       ],
       "widthMetres": 24,
-      "depthMetres": 24
+      "depthMetres": 24,
+      "structureTolerance": 4,
+      "hardTolerance": 4,
+      "boxTest": [
+        0,
+        0,
+        3,
+        3
+      ]
     },
     "nameTable": "building_name",
     "nameKey": "sm_hut",
@@ -6464,7 +7840,15 @@
         "HFFFFFH"
       ],
       "widthMetres": 56,
-      "depthMetres": 80
+      "depthMetres": 80,
+      "structureTolerance": 8,
+      "hardTolerance": 8,
+      "boxTest": [
+        0,
+        0,
+        7,
+        10
+      ]
     },
     "nameTable": "player_structure",
     "nameKey": "player_house_jabbas_sail_barge_n",

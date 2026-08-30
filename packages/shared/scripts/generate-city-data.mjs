@@ -106,13 +106,34 @@ function readFootprint(path) {
 
   const info = findChunk('INFO');
   const print = findChunk('PRNT');
-  if (!info || !print || info.length < 16) return null;
+  // Optional. When absent the box test covers the whole grid, which is true of
+  // 92 of the 93 shipped footprints -- but the one exception reserves 8x8 lots
+  // while only measuring the ground under the middle 2x2.
+  const boxChunk = findChunk('DATA');
+  if (!info || !print || info.length < 24) return null;
 
   const width = info.readInt32LE(0);
   const height = info.readInt32LE(4);
   const pivotX = info.readInt32LE(8);
   const pivotZ = info.readInt32LE(12);
+  // The two tolerances the placement test actually uses. LotManager::canPlace
+  // grows a box by the terrain under the footprint and refuses the site when
+  // that box is taller than structureReservationTolerance, so without this
+  // number a planner cannot tell a buildable slope from an unbuildable one.
+  const hardTolerance = info.readFloatLE(16);
+  const structureTolerance = info.readFloatLE(20);
   if (width <= 0 || height <= 0 || width > 64 || height > 64) return null;
+  if (!(structureTolerance > 0) || !(hardTolerance > 0)) return null;
+
+  const boxTest =
+    boxChunk && boxChunk.length >= 16
+      ? [
+          boxChunk.readInt32LE(0),
+          boxChunk.readInt32LE(4),
+          boxChunk.readInt32LE(8),
+          boxChunk.readInt32LE(12),
+        ]
+      : [0, 0, width, height];
 
   // Rows are NUL terminated, so the stride is width + 1 -- but only if the
   // chunk is exactly that long. Trusting the stride blindly on a file that
@@ -129,7 +150,17 @@ function readFootprint(path) {
   }
 
   const structureCells = rows.join('').split('').filter((c) => c === 'F').length;
-  return { width, height, pivotX, pivotZ, rows, structureCells };
+  return {
+    width,
+    height,
+    pivotX,
+    pivotZ,
+    rows,
+    structureCells,
+    hardTolerance,
+    structureTolerance,
+    boxTest,
+  };
 }
 
 const footprints = new Map();
@@ -330,6 +361,11 @@ for (const row of readTab(join(gameDir, 'datatables', 'structure', 'player_struc
           /** Metres, derived from the cell grid rather than the model bounds. */
           widthMetres: footprint.width * METRES_PER_CELL,
           depthMetres: footprint.height * METRES_PER_CELL,
+          /** Metres of height the ground may vary across the footprint. */
+          structureTolerance: footprint.structureTolerance,
+          hardTolerance: footprint.hardTolerance,
+          /** Cells whose ground counts towards that: [x0, z0, x1, z1). */
+          boxTest: footprint.boxTest,
         }
       : null,
     nameTable: shared?.nameTable ?? null,
