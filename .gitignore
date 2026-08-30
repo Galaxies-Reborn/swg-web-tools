@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.turbo/
+dist/
+*.tsbuildinfo
+
+.env
+.env.local
+.env.*.local
+
+# The converted client assets. Several gigabytes, produced from your own copy
+# of the game client -- see the README. Never committed.
+apps/web/public/assets/
+
+.DS_Store
+*.log

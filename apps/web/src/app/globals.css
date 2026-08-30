@@ -1,0 +1,141 @@
+@import 'tailwindcss';
+
+/*
+ * The palette is built around the Pre-CU HUD: near-black panels, a cool blue
+ * structural accent, and amber reserved for credits and warnings so a price is
+ * always visually distinct from a status.
+ */
+@theme {
+  --color-void: #07090d;
+  --color-panel: #0d1117;
+  --color-panel-2: #131a23;
+  --color-edge: #1e2733;
+  --color-edge-bright: #2b3a4d;
+
+  --color-ink: #e6edf5;
+  --color-ink-dim: #9aa8ba;
+  --color-ink-faint: #637184;
+
+  --color-accent: #4ea3ff;
+  --color-accent-dim: #1f5f9e;
+  --color-credit: #f0b429;
+  --color-good: #46c98b;
+  --color-warn: #f2994a;
+  --color-bad: #ef5f6b;
+
+  --color-rebel: #4ea3ff;
+  --color-imperial: #ef5f6b;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', 'Roboto Mono', monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: var(--color-void);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  /* A faint starfield gradient rather than flat black: it gives the panels an
+     edge to sit against without competing with content. */
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(78, 163, 255, 0.09), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(240, 180, 41, 0.04), transparent);
+  background-attachment: fixed;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-lg border border-[var(--color-edge)] bg-[var(--color-panel)];
+  }
+
+  .panel-hover {
+    @apply transition-colors hover:border-[var(--color-edge-bright)] hover:bg-[var(--color-panel-2)];
+  }
+
+  .label {
+    @apply text-[11px] font-medium uppercase tracking-wider text-[var(--color-ink-dim)];
+  }
+
+  .stat-value {
+    @apply font-mono text-2xl tabular-nums;
+  }
+
+  .credits {
+    @apply font-mono tabular-nums text-[var(--color-credit)];
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded border border-[var(--color-edge)]
+           bg-[var(--color-panel-2)] px-2 py-0.5 text-xs text-[var(--color-ink-dim)];
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded border
+           border-[var(--color-edge-bright)] bg-[var(--color-panel-2)] px-3 py-1.5
+           text-sm transition-colors hover:border-[var(--color-accent-dim)]
+           hover:text-[var(--color-accent)] disabled:opacity-40
+           disabled:hover:border-[var(--color-edge-bright)] disabled:hover:text-[var(--color-ink)];
+  }
+
+  .btn-primary {
+    @apply border-[var(--color-accent-dim)] bg-[var(--color-accent-dim)]/20 text-[var(--color-accent)]
+           hover:bg-[var(--color-accent-dim)]/35;
+  }
+
+  .btn-danger {
+    @apply border-[var(--color-bad)]/40 text-[var(--color-bad)] hover:bg-[var(--color-bad)]/10;
+  }
+
+  .input {
+    @apply w-full rounded border border-[var(--color-edge)] bg-[var(--color-void)] px-3 py-1.5
+           text-sm outline-none placeholder:text-[var(--color-ink-dim)]/60
+           focus:border-[var(--color-accent-dim)];
+  }
+
+  .table-row {
+    @apply border-b border-[var(--color-edge)]/60 transition-colors hover:bg-[var(--color-panel-2)];
+  }
+}
+
+/* Tabular data is unreadable with proportional digits when values change
+   in place, which the live feeds do constantly. */
+table {
+  font-variant-numeric: tabular-nums;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-void);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-edge);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-edge-bright);
+}
+
+@keyframes flash-in {
+  from {
+    background-color: rgba(78, 163, 255, 0.18);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
+/* Applied to rows the websocket just added, so a live feed reads as motion
+   rather than as content silently rearranging. */
+.flash-new {
+  animation: flash-in 1.6s ease-out;
+}

@@ -1,0 +1,6301 @@
+{
+  "slots": [
+    "reactor",
+    "engine",
+    "shield_0",
+    "shield_1",
+    "armor_0",
+    "armor_1",
+    "capacitor",
+    "booster",
+    "droid_interface",
+    "bridge",
+    "hangar",
+    "targeting_station",
+    "cargo_hold",
+    "modification_0",
+    "modification_1",
+    "weapon_0",
+    "weapon_1",
+    "weapon_2",
+    "weapon_3",
+    "weapon_4",
+    "weapon_5",
+    "weapon_6",
+    "weapon_7"
+  ],
+  "chassis": [
+    {
+      "name": "player_advanced_xwing",
+      "label": "advanced xwing",
+      "template": "object/ship/player/player_advanced_xwing.iff",
+      "model": "xwing_body",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 6000,
+      "wingOpenSpeedFactor": 0.95,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_advanced_z95",
+      "label": "advanced z95",
+      "template": "object/ship/player/player_advanced_z95.iff",
+      "model": "z95_body",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 1442,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_arc170",
+      "label": "arc170",
+      "template": "object/ship/player/player_arc170.iff",
+      "model": "arc170_body",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 6000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_awing",
+      "label": "awing",
+      "template": "object/ship/player/player_awing.iff",
+      "model": "awing_body",
+      "massMax": 63375,
+      "massMaxIsFallback": false,
+      "hitPoints": 1125,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_basic_hutt_light",
+      "label": "basic hutt light",
+      "template": "object/ship/player/player_basic_hutt_light.iff",
+      "model": "hutt_fighter_light_body_s01",
+      "massMax": 5000,
+      "massMaxIsFallback": true,
+      "hitPoints": 400,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_basic"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_basic"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_basic"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_basic"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_basic"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_basic"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_basic"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_basic"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_basic"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_basic"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_basic_tiefighter",
+      "label": "basic tiefighter",
+      "template": "object/ship/player/player_basic_tiefighter.iff",
+      "model": "tie_fighter",
+      "massMax": 5000,
+      "massMaxIsFallback": true,
+      "hitPoints": 400,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_basic"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_basic"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_basic"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_basic"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_basic"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_basic"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_basic"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_basic"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_basic"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_basic"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_basic_z95",
+      "label": "basic z95",
+      "template": "object/ship/player/player_basic_z95.iff",
+      "model": "z95_body",
+      "massMax": 5000,
+      "massMaxIsFallback": true,
+      "hitPoints": 400,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_basic"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_basic"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_basic"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_basic"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_basic"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_basic"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_basic"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_basic"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_basic"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_basic"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_heavy_s01",
+      "label": "blacksun heavy s01",
+      "template": "object/ship/player/player_blacksun_heavy_s01.iff",
+      "model": "black_sun_fighter_heavy_body_s01",
+      "massMax": 186750,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_blacksun_heavy"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_heavy_s02",
+      "label": "blacksun heavy s02",
+      "template": "object/ship/player/player_blacksun_heavy_s02.iff",
+      "model": "black_sun_fighter_heavy_body_s01",
+      "massMax": 186750,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_blacksun_heavy"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_heavy_s03",
+      "label": "blacksun heavy s03",
+      "template": "object/ship/player/player_blacksun_heavy_s03.iff",
+      "model": "black_sun_fighter_heavy_body_s02",
+      "massMax": 186750,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_blacksun_heavy"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_heavy_s04",
+      "label": "blacksun heavy s04",
+      "template": "object/ship/player/player_blacksun_heavy_s04.iff",
+      "model": "black_sun_fighter_heavy_body_s02",
+      "massMax": 186750,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_blacksun_heavy"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_light_s01",
+      "label": "blacksun light s01",
+      "template": "object/ship/player/player_blacksun_light_s01.iff",
+      "model": "black_sun_fighter_light_body_s01",
+      "massMax": 39250,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_light_s02",
+      "label": "blacksun light s02",
+      "template": "object/ship/player/player_blacksun_light_s02.iff",
+      "model": "black_sun_fighter_light_body_s01",
+      "massMax": 39250,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_light_s03",
+      "label": "blacksun light s03",
+      "template": "object/ship/player/player_blacksun_light_s03.iff",
+      "model": "black_sun_fighter_light_body_s02",
+      "massMax": 39250,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_light_s04",
+      "label": "blacksun light s04",
+      "template": "object/ship/player/player_blacksun_light_s04.iff",
+      "model": "black_sun_fighter_light_body_s02",
+      "massMax": 39250,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_medium_s01",
+      "label": "blacksun medium s01",
+      "template": "object/ship/player/player_blacksun_medium_s01.iff",
+      "model": "black_sun_fighter_medium_body_s01",
+      "massMax": 158250,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_medium_s02",
+      "label": "blacksun medium s02",
+      "template": "object/ship/player/player_blacksun_medium_s02.iff",
+      "model": "black_sun_fighter_medium_body_s01",
+      "massMax": 158250,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_medium_s03",
+      "label": "blacksun medium s03",
+      "template": "object/ship/player/player_blacksun_medium_s03.iff",
+      "model": "black_sun_fighter_medium_body_s02",
+      "massMax": 158250,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_medium_s04",
+      "label": "blacksun medium s04",
+      "template": "object/ship/player/player_blacksun_medium_s04.iff",
+      "model": "black_sun_fighter_medium_body_s02",
+      "massMax": 158250,
+      "massMaxIsFallback": false,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_vaksai",
+      "label": "blacksun vaksai",
+      "template": "object/ship/player/player_blacksun_vaksai.iff",
+      "model": "black_sun_fighter_light_body_s01",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_bwing",
+      "label": "bwing",
+      "template": "object/ship/player/player_bwing.iff",
+      "model": "bwing_cockpit_pod",
+      "massMax": 234000,
+      "massMaxIsFallback": false,
+      "hitPoints": 1765,
+      "wingOpenSpeedFactor": 0.95,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_6",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_decimator",
+      "label": "decimator",
+      "template": "object/ship/player/player_decimator.iff",
+      "model": "vt49_r0",
+      "massMax": 4995000,
+      "massMaxIsFallback": false,
+      "hitPoints": 5000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_1"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_firespray",
+      "label": "firespray",
+      "template": "object/ship/player/player_firespray.iff",
+      "model": "kse_firespray_body",
+      "massMax": 205500,
+      "massMaxIsFallback": false,
+      "hitPoints": 1650,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_grievous_starship",
+      "label": "grievous starship",
+      "template": "object/ship/player/player_grievous_starship.iff",
+      "model": "grievous_starship_body",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 1500,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_gunship_imperial",
+      "label": "gunship imperial",
+      "template": "object/ship/player/player_gunship_imperial.iff",
+      "model": "imperial_gunboat_player_r0",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 5000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0",
+            "rct_gunship"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0",
+            "shd_gunship"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0",
+            "arm_gunship"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0",
+            "arm_gunship"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0",
+            "cap_gunship"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_1"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0",
+            "cms_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0",
+            "cms_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_6",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_7",
+          "compatibility": [
+            "wpn_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_gunship_neutral",
+      "label": "gunship neutral",
+      "template": "object/ship/player/player_gunship_neutral.iff",
+      "model": "blacksun_transport_player_r0",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 5000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0",
+            "rct_gunship"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0",
+            "shd_gunship"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0",
+            "arm_gunship"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0",
+            "arm_gunship"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0",
+            "cap_gunship"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_1"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0",
+            "cms_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0",
+            "cms_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_6",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_7",
+          "compatibility": [
+            "wpn_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_gunship_rebel",
+      "label": "gunship rebel",
+      "template": "object/ship/player/player_gunship_rebel.iff",
+      "model": "rebel_gunboat_player_r0",
+      "massMax": 7005000,
+      "massMaxIsFallback": false,
+      "hitPoints": 5000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0",
+            "rct_gunship"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0",
+            "shd_gunship"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0",
+            "arm_gunship"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0",
+            "arm_gunship"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0",
+            "cap_gunship"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_1"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0",
+            "cms_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0",
+            "cms_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_6",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_7",
+          "compatibility": [
+            "wpn_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_hutt_heavy_s01",
+      "label": "hutt heavy s01",
+      "template": "object/ship/player/player_hutt_heavy_s01.iff",
+      "model": "hutt_fighter_heavy_body_s01",
+      "massMax": 177750,
+      "massMaxIsFallback": false,
+      "hitPoints": 6000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_hutt_heavy"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_hutt_heavy_s02",
+      "label": "hutt heavy s02",
+      "template": "object/ship/player/player_hutt_heavy_s02.iff",
+      "model": "hutt_fighter_heavy_body_s02",
+      "massMax": 177750,
+      "massMaxIsFallback": false,
+      "hitPoints": 1512,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_hutt_heavy"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_hutt_light_s01",
+      "label": "hutt light s01",
+      "template": "object/ship/player/player_hutt_light_s01.iff",
+      "model": "hutt_fighter_light_body_s01",
+      "massMax": 11700,
+      "massMaxIsFallback": false,
+      "hitPoints": 6000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_hutt_light_s02",
+      "label": "hutt light s02",
+      "template": "object/ship/player/player_hutt_light_s02.iff",
+      "model": "hutt_fighter_light_body_s02",
+      "massMax": 11700,
+      "massMaxIsFallback": false,
+      "hitPoints": 1340,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_hutt_medium_s01",
+      "label": "hutt medium s01",
+      "template": "object/ship/player/player_hutt_medium_s01.iff",
+      "model": "hutt_fighter_medium_body_s01",
+      "massMax": 127250,
+      "massMaxIsFallback": false,
+      "hitPoints": 1512,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_hutt_medium_s02",
+      "label": "hutt medium s02",
+      "template": "object/ship/player/player_hutt_medium_s02.iff",
+      "model": "hutt_fighter_medium_body_s02",
+      "massMax": 127250,
+      "massMaxIsFallback": false,
+      "hitPoints": 1512,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_hutt_turret_ship",
+      "label": "hutt turret ship",
+      "template": "object/ship/player/player_hutt_turret_ship.iff",
+      "model": "hutt_fighter_heavy_body_s03",
+      "massMax": 207750,
+      "massMaxIsFallback": false,
+      "hitPoints": 1512,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_jedi_starfighter",
+      "label": "jedi starfighter",
+      "template": "object/ship/player/player_jedi_starfighter.iff",
+      "model": "jedifighter_body",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 1512,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_naboo_n1",
+      "label": "naboo n1",
+      "template": "object/ship/player/player_naboo_n1.iff",
+      "model": "naboo_starfighter_base",
+      "massMax": 63375,
+      "massMaxIsFallback": false,
+      "hitPoints": 1125,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_prototype_hutt_light",
+      "label": "prototype hutt light",
+      "template": "object/ship/player/player_prototype_hutt_light.iff",
+      "model": "hutt_fighter_light_body_s01",
+      "massMax": 11000,
+      "massMaxIsFallback": true,
+      "hitPoints": 800,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_prototype_tiefighter",
+      "label": "prototype tiefighter",
+      "template": "object/ship/player/player_prototype_tiefighter.iff",
+      "model": "tie_fighter",
+      "massMax": 11000,
+      "massMaxIsFallback": true,
+      "hitPoints": 800,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_prototype_z95",
+      "label": "prototype z95",
+      "template": "object/ship/player/player_prototype_z95.iff",
+      "model": "z95_body",
+      "massMax": 11000,
+      "massMaxIsFallback": true,
+      "hitPoints": 800,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_sorosuub_space_yacht",
+      "label": "sorosuub space yacht",
+      "template": "object/ship/player/player_sorosuub_space_yacht.iff",
+      "model": "sorosuub_space_yacht_r0",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 1512,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "shield_1",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_test_falcon",
+      "label": "test falcon",
+      "template": null,
+      "model": null,
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 1942,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "generic"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "generic"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "generic"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "generic"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "generic"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "generic"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "generic"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tie_in",
+      "label": "tie in",
+      "template": "object/ship/player/player_tie_in.iff",
+      "model": "tie_fighter_in",
+      "massMax": 68000,
+      "massMaxIsFallback": false,
+      "hitPoints": 1350,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tie_light_duty",
+      "label": "tie light duty",
+      "template": "object/ship/player/player_tie_light_duty.iff",
+      "model": "tie_fighter",
+      "massMax": 11700,
+      "massMaxIsFallback": false,
+      "hitPoints": 1350,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tieadvanced",
+      "label": "tieadvanced",
+      "template": "object/ship/player/player_tieadvanced.iff",
+      "model": "tie_advanced",
+      "massMax": 63375,
+      "massMaxIsFallback": false,
+      "hitPoints": 1462.5,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_tieadvanced"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tieadvanced_modified",
+      "label": "tieadvanced modified",
+      "template": "object/ship/player/player_tieadvanced_modified.iff",
+      "model": "tie_advanced",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 1462.5,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tieaggressor",
+      "label": "tieaggressor",
+      "template": "object/ship/player/player_tieaggressor.iff",
+      "model": "tie_aggressor",
+      "massMax": 117000,
+      "massMaxIsFallback": false,
+      "hitPoints": 1643.2,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tiebomber",
+      "label": "tiebomber",
+      "template": "object/ship/player/player_tiebomber.iff",
+      "model": "tie_bomber_b",
+      "massMax": 185250,
+      "massMaxIsFallback": false,
+      "hitPoints": 2131,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tiefighter",
+      "label": "tiefighter",
+      "template": "object/ship/player/player_tiefighter.iff",
+      "model": "tie_fighter",
+      "massMax": 19500,
+      "massMaxIsFallback": false,
+      "hitPoints": 1350,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tiefighter_modified",
+      "label": "tiefighter modified",
+      "template": "object/ship/player/player_tiefighter_modified.iff",
+      "model": "tie_fighter_modified",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 1350,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tieinterceptor",
+      "label": "tieinterceptor",
+      "template": "object/ship/player/player_tieinterceptor.iff",
+      "model": "tie_interceptor",
+      "massMax": 48750,
+      "massMaxIsFallback": false,
+      "hitPoints": 6000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tieinterceptor_imperial_guard",
+      "label": "tieinterceptor imperial guard",
+      "template": "object/ship/player/player_tieinterceptor_imperial_guard.iff",
+      "model": "tie_interceptor_imperial_guard",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 6000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tieoppressor",
+      "label": "tieoppressor",
+      "template": "object/ship/player/player_tieoppressor.iff",
+      "model": "tie_oppressor",
+      "massMax": 166250,
+      "massMaxIsFallback": false,
+      "hitPoints": 1765,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_vwing",
+      "label": "vwing",
+      "template": "object/ship/player/player_vwing.iff",
+      "model": "vwing_body",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 2100,
+      "wingOpenSpeedFactor": 0.95,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_xwing",
+      "label": "xwing",
+      "template": "object/ship/player/player_xwing.iff",
+      "model": "xwing_body",
+      "massMax": 97500,
+      "massMaxIsFallback": false,
+      "hitPoints": 6000,
+      "wingOpenSpeedFactor": 0.95,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_xwing"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_y8_mining_ship",
+      "label": "y8 mining ship",
+      "template": "object/ship/player/player_y8_mining_ship.iff",
+      "model": "y8_r0",
+      "massMax": 500000,
+      "massMaxIsFallback": true,
+      "hitPoints": 5000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_2"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0",
+            "wpn_mining"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0",
+            "wpn_mining"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0",
+            "wpn_mining"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_0",
+            "wpn_mining"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_0",
+            "wpn_mining"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_6",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_ykl37r",
+      "label": "ykl37r",
+      "template": "object/ship/player/player_ykl37r.iff",
+      "model": "ykl37r_r0",
+      "massMax": 4995000,
+      "massMaxIsFallback": false,
+      "hitPoints": 5000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_1"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_yt1300",
+      "label": "yt1300",
+      "template": "object/ship/player/player_yt1300.iff",
+      "model": "yt1300_r0",
+      "massMax": 4995000,
+      "massMaxIsFallback": false,
+      "hitPoints": 5000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_1"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_yt2400",
+      "label": "yt2400",
+      "template": "object/ship/player/player_yt2400.iff",
+      "model": "yt2400_npc",
+      "massMax": 5000000,
+      "massMaxIsFallback": true,
+      "hitPoints": 5000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_1"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_ywing",
+      "label": "ywing",
+      "template": "object/ship/player/player_ywing.iff",
+      "model": "ywing_body",
+      "massMax": 146250,
+      "massMaxIsFallback": false,
+      "hitPoints": 1942,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_ywing_longprobe",
+      "label": "ywing longprobe",
+      "template": "object/ship/player/player_ywing_longprobe.iff",
+      "model": "ywing_body",
+      "massMax": 165750,
+      "massMaxIsFallback": false,
+      "hitPoints": 1942,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_z95",
+      "label": "z95",
+      "template": "object/ship/player/player_z95.iff",
+      "model": "z95_body",
+      "massMax": 11700,
+      "massMaxIsFallback": false,
+      "hitPoints": 1442,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "modification_0",
+          "compatibility": [
+            "mod_z95"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_star_destroyer",
+      "label": "star destroyer",
+      "template": "object/ship/player/player_star_destroyer.iff",
+      "model": null,
+      "massMax": 50000,
+      "massMaxIsFallback": true,
+      "hitPoints": 100000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "shield_1",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "bridge",
+          "compatibility": [
+            "bdg_0"
+          ]
+        },
+        {
+          "slot": "hangar",
+          "compatibility": [
+            "hgr_0"
+          ]
+        },
+        {
+          "slot": "targeting_station",
+          "compatibility": [
+            "tst_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_6",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_7",
+          "compatibility": [
+            "wpn_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_corvette",
+      "label": "corvette",
+      "template": "object/ship/player/player_corvette.iff",
+      "model": null,
+      "massMax": 50000,
+      "massMaxIsFallback": true,
+      "hitPoints": 60000,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "shield_1",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "bridge",
+          "compatibility": [
+            "bdg_0"
+          ]
+        },
+        {
+          "slot": "hangar",
+          "compatibility": [
+            "hgr_0"
+          ]
+        },
+        {
+          "slot": "targeting_station",
+          "compatibility": [
+            "tst_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_6",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_7",
+          "compatibility": [
+            "wpn_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_blacksun_vaksai_s02",
+      "label": "blacksun vaksai s02",
+      "template": "object/ship/player/player_blacksun_vaksai_s02.iff",
+      "model": "black_sun_fighter_light_body_s02",
+      "massMax": 10000,
+      "massMaxIsFallback": true,
+      "hitPoints": 519,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_tiedefender",
+      "label": "tiedefender",
+      "template": "object/ship/player/player_tiedefender.iff",
+      "model": "tie_defender",
+      "massMax": 178000,
+      "massMaxIsFallback": false,
+      "hitPoints": 1765,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_twing",
+      "label": "twing",
+      "template": "object/ship/player/player_twing.iff",
+      "model": "twing_body",
+      "massMax": 77000,
+      "massMaxIsFallback": false,
+      "hitPoints": 1650,
+      "wingOpenSpeedFactor": 0.95,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "player_havoc",
+      "label": "havoc",
+      "template": "object/ship/player/player_havoc.iff",
+      "model": "a_havoc_nyms",
+      "massMax": 55375,
+      "massMaxIsFallback": false,
+      "hitPoints": 1643.2,
+      "wingOpenSpeedFactor": 1,
+      "slots": [
+        {
+          "slot": "reactor",
+          "compatibility": [
+            "rct_0"
+          ]
+        },
+        {
+          "slot": "engine",
+          "compatibility": [
+            "eng_0"
+          ]
+        },
+        {
+          "slot": "shield_0",
+          "compatibility": [
+            "shd_0"
+          ]
+        },
+        {
+          "slot": "armor_0",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "armor_1",
+          "compatibility": [
+            "arm_0"
+          ]
+        },
+        {
+          "slot": "capacitor",
+          "compatibility": [
+            "cap_0"
+          ]
+        },
+        {
+          "slot": "booster",
+          "compatibility": [
+            "bst_0"
+          ]
+        },
+        {
+          "slot": "droid_interface",
+          "compatibility": [
+            "ddi_0"
+          ]
+        },
+        {
+          "slot": "cargo_hold",
+          "compatibility": [
+            "crg_0"
+          ]
+        },
+        {
+          "slot": "weapon_0",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_1",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_2",
+          "compatibility": [
+            "wpn_0"
+          ]
+        },
+        {
+          "slot": "weapon_3",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_4",
+          "compatibility": [
+            "wpn_1"
+          ]
+        },
+        {
+          "slot": "weapon_5",
+          "compatibility": [
+            "cms_0"
+          ]
+        }
+      ]
+    }
+  ]
+}

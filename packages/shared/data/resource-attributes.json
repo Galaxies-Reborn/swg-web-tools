@@ -1,0 +1,46 @@
+{
+  "res_decay_resist": {
+    "code": "DR",
+    "label": "Decay Resistance"
+  },
+  "res_quality": {
+    "code": "OQ",
+    "label": "Overall Quality"
+  },
+  "res_flavor": {
+    "code": "FL",
+    "label": "Flavor"
+  },
+  "res_potential_energy": {
+    "code": "PE",
+    "label": "Potential Energy"
+  },
+  "res_malleability": {
+    "code": "MA",
+    "label": "Malleability"
+  },
+  "res_toughness": {
+    "code": "UT",
+    "label": "Unit Toughness"
+  },
+  "res_shock_resistance": {
+    "code": "SR",
+    "label": "Shock Resistance"
+  },
+  "res_cold_resist": {
+    "code": "CD",
+    "label": "Cold Resistance"
+  },
+  "res_heat_resist": {
+    "code": "HR",
+    "label": "Heat Resistance"
+  },
+  "res_conductivity": {
+    "code": "CR",
+    "label": "Conductivity"
+  },
+  "entangle_resistance": {
+    "code": "ER",
+    "label": "Entanglement Resistance"
+  }
+}

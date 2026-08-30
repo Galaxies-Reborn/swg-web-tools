@@ -1,0 +1,6506 @@
+[
+  {
+    "template": "object/building/player/player_house_tcg_relaxation_pool.iff",
+    "stem": "player_house_tcg_relaxation_pool",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "tcg_relaxation_pool",
+    "model": "ply_all_swimming_pool_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_jedi_meditation_room.iff",
+    "stem": "player_house_jedi_meditation_room",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_jedi_meditation_room_n",
+    "model": "ply_jedi_meditation_room_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_sith_meditation_room.iff",
+    "stem": "player_house_sith_meditation_room",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_sith_meditation_room_n",
+    "model": "ply_sith_meditation_room_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_corellia_small_style_01.iff",
+    "stem": "player_house_corellia_small_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_corellia_small_style_1",
+    "model": "lod/ply_corl_house_sm_s01_fp1_r0_exterior_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_corellia_small_style_01_floorplan_02.iff",
+    "stem": "player_house_corellia_small_style_01_floorplan_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_corellia_small_style_1_floorplan_2",
+    "model": "lod/ply_corl_house_sm_s01_fp2_r0_exterior_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_corellia_small_style_02.iff",
+    "stem": "player_house_corellia_small_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_corellia_small_style_2",
+    "model": "lod/ply_corl_house_sm_s02_fp1_r0_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_corellia_small_style_02_floorplan_02.iff",
+    "stem": "player_house_corellia_small_style_02_floorplan_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_corellia_small_style_2_floorplan_2",
+    "model": "lod/ply_corl_house_sm_s02_fp2_r0_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_corellia_medium_style_01.iff",
+    "stem": "player_house_corellia_medium_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFF",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_corellia_medium_style_1",
+    "model": "lod/ply_corl_house_m_s01_fp1_r0_exterior_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_corellia_medium_style_02.iff",
+    "stem": "player_house_corellia_medium_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFF",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_corellia_medium_style_2",
+    "model": "lod/ply_corl_house_m_s02_fp1_r0_exterior_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_corellia_large_style_01.iff",
+    "stem": "player_house_corellia_large_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 5,
+      "pivotX": 3,
+      "pivotZ": 2,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_corellia_large_style_1",
+    "model": "lod/ply_corl_house_lg_s01_fp1_r0_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_corellia_large_style_02.iff",
+    "stem": "player_house_corellia_large_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 5,
+      "pivotX": 3,
+      "pivotZ": 2,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_corellia_large_style_2",
+    "model": "lod/ply_corl_house_lg_s02_fp1_r0_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_generic_small_style_01.iff",
+    "stem": "player_house_generic_small_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_general_small_style_1",
+    "model": "lod/ply_all_house_sm_s01_fp1_r0_exterior_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_small_style_01_floorplan_02.iff",
+    "stem": "player_house_generic_small_style_01_floorplan_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_general_small_style_1_floorplan_2",
+    "model": "lod/ply_all_house_sm_s01_fp2_r0_exterior_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_small_style_02.iff",
+    "stem": "player_house_generic_small_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_general_small_style_2",
+    "model": "lod/ply_all_house_sm_s02_fp1_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_small_style_02_floorplan_02.iff",
+    "stem": "player_house_generic_small_style_02_floorplan_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_general_small_style_2_floorplan_2",
+    "model": "lod/ply_all_house_sm_s02_fp2_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_medium_style_01.iff",
+    "stem": "player_house_generic_medium_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFF",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_general_medium_style_1",
+    "model": "lod/ply_all_house_m_s01_fp1_r0_exterior_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_medium_style_02.iff",
+    "stem": "player_house_generic_medium_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFF",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_general_medium_style_2",
+    "model": "lod/ply_all_house_m_s02_fp1_r0_exterior_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_large_style_01.iff",
+    "stem": "player_house_generic_large_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 5,
+      "pivotX": 3,
+      "pivotZ": 2,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_general_large_style_1",
+    "model": "lod/ply_all_house_lg_s01_fp1_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_large_style_02.iff",
+    "stem": "player_house_generic_large_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 5,
+      "pivotX": 3,
+      "pivotZ": 2,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_general_large_style_2",
+    "model": "lod/ply_all_house_lg_s02_fp1_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_naboo_small_style_01.iff",
+    "stem": "player_house_naboo_small_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 2,
+      "rows": [
+        "HFH",
+        "FFF",
+        "HFH",
+        ".H."
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_naboo_small",
+    "model": "lod/ply_nboo_house_sm_s01_fp1_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_naboo_small_style_02.iff",
+    "stem": "player_house_naboo_small_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 4,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFFH",
+        "FFFH",
+        "FFFH"
+      ],
+      "widthMetres": 32,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_naboo_small",
+    "model": "lod/ply_nboo_house_sm_s02_fp1_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_naboo_medium_style_01.iff",
+    "stem": "player_house_naboo_medium_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_naboo_medium",
+    "model": "lod/ply_nboo_house_m_s01_fp1_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_naboo_medium_style_02.iff",
+    "stem": "player_house_naboo_medium_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": null,
+    "nameKey": null,
+    "model": null,
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_naboo_large_style_01.iff",
+    "stem": "player_house_naboo_large_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 6,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HHHFHHH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 48
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_naboo_large",
+    "model": "lod/ply_nboo_house_lg_s01_fp1_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_tatooine_small_style_01.iff",
+    "stem": "player_house_tatooine_small_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_tatt_style01_small",
+    "model": "lod/ply_tato_house_sm_s01_fp1_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_tatooine_small_style_02.iff",
+    "stem": "player_house_tatooine_small_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_tatt_style01_small",
+    "model": "lod/ply_tato_house_sm_s02_fp1_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_tatooine_medium_style_01.iff",
+    "stem": "player_house_tatooine_medium_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_tatt_style01_med",
+    "model": "lod/ply_tato_house_m_s01_fp1_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_tatooine_large_style_01.iff",
+    "stem": "player_house_tatooine_large_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 5,
+      "pivotX": 3,
+      "pivotZ": 2,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_tatt_style01_large",
+    "model": "lod/ply_tato_house_lg_s01_fp1_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/installation/manufacture/clothing_factory.iff",
+    "stem": "clothing_factory",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 13,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "clothing_factory",
+    "model": "ins_all_factory_clothing",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/manufacture/food_factory.iff",
+    "stem": "food_factory",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 13,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "food_factory",
+    "model": "ins_all_factory_organic",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/manufacture/weapon_factory.iff",
+    "stem": "weapon_factory",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 13,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "item_factory",
+    "model": "ins_all_factory_item",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/manufacture/structure_factory.iff",
+    "stem": "structure_factory",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 13,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "installation_n",
+    "nameKey": "structure_factory",
+    "model": "ins_all_factory_machine",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/generators/power_generator_fusion_style_1.iff",
+    "stem": "power_generator_fusion_style_1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 5,
+      "pivotX": 1,
+      "pivotZ": 2,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HFH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 40
+    },
+    "nameTable": "installation_n",
+    "nameKey": "fusion_generator",
+    "model": "ins_all_pow_fusion_ion_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/generators/power_generator_photo_bio_style_1.iff",
+    "stem": "power_generator_photo_bio_style_1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 3,
+      "pivotX": 2,
+      "pivotZ": 1,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "photobio_generator",
+    "model": "ins_all_photo_bio_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/generators/power_generator_solar_style_1.iff",
+    "stem": "power_generator_solar_style_1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "solar_generator",
+    "model": "ins_all_pow_solar_base_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/generators/power_generator_geothermal_style_1.iff",
+    "stem": "power_generator_geothermal_style_1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 1,
+      "height": 1,
+      "pivotX": 0,
+      "pivotZ": 0,
+      "rows": [
+        "F"
+      ],
+      "widthMetres": 8,
+      "depthMetres": 8
+    },
+    "nameTable": "installation_n",
+    "nameKey": "geothermal_generator",
+    "model": "ins_all_mobile_chem_refinery",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/generators/power_generator_wind_style_1.iff",
+    "stem": "power_generator_wind_style_1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "wind_generator",
+    "model": "ins_all_pow_wind_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_gas/mining_gas_harvester_style_1.iff",
+    "stem": "mining_gas_harvester_style_1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 8,
+    "powerRate": 25,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 1,
+      "height": 1,
+      "pivotX": 0,
+      "pivotZ": 0,
+      "rows": [
+        "F"
+      ],
+      "widthMetres": 8,
+      "depthMetres": 8
+    },
+    "nameTable": "installation_n",
+    "nameKey": "gas_mine_small",
+    "model": "ins_all_mobile_gas_refinery",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_gas/mining_gas_harvester_style_2.iff",
+    "stem": "mining_gas_harvester_style_2",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "gas_mine",
+    "model": "ins_all_gas_med",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_gas/mining_gas_harvester_style_3.iff",
+    "stem": "mining_gas_harvester_style_3",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 23,
+    "powerRate": 75,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "gas_mine_heavy",
+    "model": "ins_all_min_gas_s01_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_gas/mining_gas_harvester_style_4.iff",
+    "stem": "mining_gas_harvester_style_4",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 63,
+    "powerRate": 206,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "gas_mine_elite",
+    "model": "ins_all_min_gas_s01_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_liquid/mining_liquid_harvester_style_1.iff",
+    "stem": "mining_liquid_harvester_style_1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 8,
+    "powerRate": 25,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 1,
+      "height": 1,
+      "pivotX": 0,
+      "pivotZ": 0,
+      "rows": [
+        "F"
+      ],
+      "widthMetres": 8,
+      "depthMetres": 8
+    },
+    "nameTable": "installation_n",
+    "nameKey": "liquid_mine",
+    "model": "ins_all_mobile_chem_refinery",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_liquid/mining_liquid_harvester_style_2.iff",
+    "stem": "mining_liquid_harvester_style_2",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 3,
+      "pivotX": 2,
+      "pivotZ": 1,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "liquid_mine_medium",
+    "model": "ins_all_min_liquid_s01_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_liquid/mining_liquid_harvester_style_3.iff",
+    "stem": "mining_liquid_harvester_style_3",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 23,
+    "powerRate": 75,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "liquid_mine_heavy",
+    "model": "ins_all_creature_farm_s01_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_liquid/mining_liquid_harvester_style_4.iff",
+    "stem": "mining_liquid_harvester_style_4",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 63,
+    "powerRate": 206,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "liquid_mine_elite",
+    "model": "ins_all_creature_farm_s01_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_liquid/mining_liquid_moisture_harvester.iff",
+    "stem": "mining_liquid_moisture_harvester",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 8,
+    "powerRate": 25,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 1,
+      "height": 1,
+      "pivotX": 0,
+      "pivotZ": 0,
+      "rows": [
+        "F"
+      ],
+      "widthMetres": 8,
+      "depthMetres": 8
+    },
+    "nameTable": "installation_n",
+    "nameKey": "moisture_mine",
+    "model": "ins_all_min_moisture_s01_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_liquid/mining_liquid_moisture_harvester_medium.iff",
+    "stem": "mining_liquid_moisture_harvester_medium",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "moisture_mine_medium",
+    "model": "ins_all_moisture_med",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_liquid/mining_liquid_moisture_harvester_heavy.iff",
+    "stem": "mining_liquid_moisture_harvester_heavy",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 23,
+    "powerRate": 75,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "moisture_mine_heavy",
+    "model": "ins_all_moisture_lrg",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_liquid/mining_liquid_moisture_harvester_elite.iff",
+    "stem": "mining_liquid_moisture_harvester_elite",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 63,
+    "powerRate": 206,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "moisture_mine_elite",
+    "model": "ins_all_moisture_lrg",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_ore/mining_ore_harvester_style_1.iff",
+    "stem": "mining_ore_harvester_style_1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 8,
+    "powerRate": 25,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 1,
+      "height": 1,
+      "pivotX": 0,
+      "pivotZ": 0,
+      "rows": [
+        "F"
+      ],
+      "widthMetres": 8,
+      "depthMetres": 8
+    },
+    "nameTable": "installation_n",
+    "nameKey": "small_ore_mine",
+    "model": "ins_all_mobile_ore_refinery",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_ore/mining_ore_harvester_style_2.iff",
+    "stem": "mining_ore_harvester_style_2",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 3,
+      "pivotX": 2,
+      "pivotZ": 1,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "ore_mine",
+    "model": "ins_all_min_s01_u1",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_ore/mining_ore_harvester_heavy.iff",
+    "stem": "mining_ore_harvester_heavy",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 23,
+    "powerRate": 75,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 3,
+      "pivotX": 2,
+      "pivotZ": 1,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "heavy_ore_mine",
+    "model": "ins_all_min_s02_u1",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_ore/mining_ore_harvester_elite.iff",
+    "stem": "mining_ore_harvester_elite",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 63,
+    "powerRate": 206,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 3,
+      "pivotX": 2,
+      "pivotZ": 1,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "elite_ore_mine",
+    "model": "ins_all_min_s02_u1",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_organic/mining_organic_creature_farm.iff",
+    "stem": "mining_organic_creature_farm",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 13,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "creature_farm",
+    "model": "ins_all_creature_farm_s01_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_organic/mining_organic_flora_farm.iff",
+    "stem": "mining_organic_flora_farm",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 8,
+    "powerRate": 25,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 1,
+      "height": 1,
+      "pivotX": 0,
+      "pivotZ": 0,
+      "rows": [
+        "F"
+      ],
+      "widthMetres": 8,
+      "depthMetres": 8
+    },
+    "nameTable": "installation_n",
+    "nameKey": "flora_farm_small",
+    "model": "ins_all_flora_small",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_organic/mining_organic_flora_farm_medium.iff",
+    "stem": "mining_organic_flora_farm_medium",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 15,
+    "powerRate": 50,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "flora_farm",
+    "model": "ins_all_flora_farm_base_s01_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_organic/mining_organic_flora_farm_heavy.iff",
+    "stem": "mining_organic_flora_farm_heavy",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 23,
+    "powerRate": 75,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "flora_farm_heavy",
+    "model": "ins_all_photo_bio_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/mining_organic/mining_organic_flora_farm_elite.iff",
+    "stem": "mining_organic_flora_farm_elite",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 63,
+    "powerRate": 206,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "installation_n",
+    "nameKey": "flora_farm_elite",
+    "model": "ins_all_photo_bio_u0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_guildhall_corellia_style_01.iff",
+    "stem": "player_guildhall_corellia_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 25,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 8,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "FFFFFFF",
+        "FFFFFFF",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 64
+    },
+    "nameTable": "building_name",
+    "nameKey": "association_hall_general",
+    "model": "lod/ply_corl_assoc_hall_civ_s01_r0_exterior_mesh_exterior",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/player_guildhall_generic_style_01.iff",
+    "stem": "player_guildhall_generic_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 25,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 8,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "FFFFFFF",
+        "FFFFFFF",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 64
+    },
+    "nameTable": "building_name",
+    "nameKey": "association_hall_general",
+    "model": "lod/ply_all_assoc_hall_civ_s01_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_guildhall_naboo_style_01.iff",
+    "stem": "player_guildhall_naboo_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 25,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 8,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "FFFFFFF",
+        "FFFFFFF",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 64
+    },
+    "nameTable": "building_name",
+    "nameKey": "association_hall_general",
+    "model": "lod/ply_nboo_assoc_hall_civ_s01_r0_exterior_mesh_exterior",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/player_guildhall_tatooine_style_01.iff",
+    "stem": "player_guildhall_tatooine_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 25,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 8,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "FFFFFFF",
+        "FFFFFFF",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 64
+    },
+    "nameTable": "building_name",
+    "nameKey": "association_hall_general",
+    "model": "lod/ply_tato_assoc_hall_civ_s01_r0_exterior_mesh_exterior",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_guildhall_tatooine_style_02.iff",
+    "stem": "player_guildhall_tatooine_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 25,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 9,
+      "height": 5,
+      "pivotX": 4,
+      "pivotZ": 2,
+      "rows": [
+        "HHHFFFHHH",
+        "HFFFFFFFH",
+        "HFFFFFFFH",
+        "HFFFFFFFH",
+        "HHFFFFFHH"
+      ],
+      "widthMetres": 72,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "association_hall_general",
+    "model": "lod/ply_tato_assoc_hall_civ_s02_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/installation/turret/turret_block_large.iff",
+    "stem": "turret_block_large",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "block_large",
+    "model": "ins_all_def_turret_lg_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/turret/turret_block_med.iff",
+    "stem": "turret_block_med",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 10,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "block_medium",
+    "model": "ins_all_def_turret_m_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/turret/turret_block_sm.iff",
+    "stem": "turret_block_sm",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 5,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "block_small",
+    "model": "ins_all_def_turret_sm_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/covert_detector/detector_32m.iff",
+    "stem": "detector_32m",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 8,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": null,
+    "nameKey": null,
+    "model": null,
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/turret/block_lg.iff",
+    "stem": "block_lg",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "block_large",
+    "model": "ins_all_def_turret_lg_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/turret/block_med.iff",
+    "stem": "block_med",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 10,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "block_medium",
+    "model": "ins_all_def_turret_m_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/turret/block_sm.iff",
+    "stem": "block_sm",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 5,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "block_small",
+    "model": "ins_all_def_turret_sm_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/turret/dish_sm.iff",
+    "stem": "dish_sm",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 5,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "dish_small",
+    "model": "ins_all_def_turret_sm_s03",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/turret/dish_lg.iff",
+    "stem": "dish_lg",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "dish_large",
+    "model": "ins_all_def_turret_lg_s03",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/turret/tower_lg.iff",
+    "stem": "tower_lg",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 15,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "tower_large",
+    "model": "ins_all_def_turret_lg_s02",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/turret/tower_med.iff",
+    "stem": "tower_med",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 10,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "tower_medium",
+    "model": "ins_all_def_turret_m_s02",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/turret/tower_sm.iff",
+    "stem": "tower_sm",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 0,
+    "maintenanceRate": 5,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "turret_n",
+    "nameKey": "tower_small",
+    "model": "ins_all_def_turret_sm_s02",
+    "scenes": null
+  },
+  {
+    "template": "object/installation/faction_perk/minefield/field_1x1.iff",
+    "stem": "field_1x1",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 1,
+      "height": 1,
+      "pivotX": 0,
+      "pivotZ": 0,
+      "rows": [
+        "F"
+      ],
+      "widthMetres": 8,
+      "depthMetres": 8
+    },
+    "nameTable": null,
+    "nameKey": null,
+    "model": "frn_all_lamp_free_s1",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s01_rebel.iff",
+    "stem": "hq_s01_rebel",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s01_rebel",
+    "model": "lod/mun_all_military_storage_shed_rebl_s01_r0_exterior_mesh_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s01_imp.iff",
+    "stem": "hq_s01_imp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s01_imp",
+    "model": "lod/mun_all_military_storage_shed_impl_s01_r0_exterior_mesh_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s02_rebel.iff",
+    "stem": "hq_s02_rebel",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s02_rebel",
+    "model": "lod/poi_all_impl_bunker_s01_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s02_imp.iff",
+    "stem": "hq_s02_imp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s02_imp",
+    "model": "lod/poi_all_impl_bunker_s01_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s03_rebel.iff",
+    "stem": "hq_s03_rebel",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s03_rebel",
+    "model": "lod/poi_all_impl_bunker_s02_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s03_imp.iff",
+    "stem": "hq_s03_imp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s03_imp",
+    "model": "lod/poi_all_impl_bunker_s02_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s04_rebel.iff",
+    "stem": "hq_s04_rebel",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s04_rebel",
+    "model": "lod/poi_all_impl_bunker_s03_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s04_imp.iff",
+    "stem": "hq_s04_imp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s04_imp",
+    "model": "lod/poi_all_impl_bunker_s03_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s05_rebel.iff",
+    "stem": "hq_s05_rebel",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s05_rebel",
+    "model": "lod/mun_all_military_base_police_station_rebl_s01_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s05_imp.iff",
+    "stem": "hq_s05_imp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s05_imp",
+    "model": "lod/mun_all_military_base_police_station_impl_s01_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_merchant_tent_style_01.iff",
+    "stem": "player_merchant_tent_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 3,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFH",
+        "FFF",
+        "HFH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "merchant_tent",
+    "model": "lod/ply_tato_merchant_tent_s01_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_merchant_tent_style_02.iff",
+    "stem": "player_merchant_tent_style_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 3,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFH",
+        "FFF",
+        "HFH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "merchant_tent",
+    "model": "lod/ply_corl_merchant_tent_s01_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_merchant_tent_style_03.iff",
+    "stem": "player_merchant_tent_style_03",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 3,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFH",
+        "FFF",
+        "HFH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "merchant_tent",
+    "model": "lod/ply_nboo_merchant_tent_s01_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/cityhall_tatooine.iff",
+    "stem": "cityhall_tatooine",
+    "civic": true,
+    "cityRank": 0,
+    "cityCost": 1,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 9,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "HHHHHHH",
+        "HHFFFHH",
+        "HFFFFFH",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 72
+    },
+    "nameTable": "building_name",
+    "nameKey": "cityhall",
+    "model": "lod/ply_tato_capitol_s01_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/cityhall_naboo.iff",
+    "stem": "cityhall_naboo",
+    "civic": true,
+    "cityRank": 0,
+    "cityCost": 1,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 9,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "HHHHHHH",
+        "HHFFFHH",
+        "HFFFFFH",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 72
+    },
+    "nameTable": "building_name",
+    "nameKey": "cityhall",
+    "model": "lod/ply_nboo_capitol_s01_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/cityhall_corellia.iff",
+    "stem": "cityhall_corellia",
+    "civic": true,
+    "cityRank": 0,
+    "cityCost": 1,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 9,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "HHHHHHH",
+        "HHFFFHH",
+        "HFFFFFH",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 72
+    },
+    "nameTable": "building_name",
+    "nameKey": "cityhall",
+    "model": "lod/ply_corl_capitol_s01_r0_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/bank_tatooine.iff",
+    "stem": "bank_tatooine",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 4,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "bank",
+    "model": "ply_tato_bank_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/bank_naboo.iff",
+    "stem": "bank_naboo",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 4,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "bank",
+    "model": "ply_nboo_bank_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/bank_corellia.iff",
+    "stem": "bank_corellia",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 4,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "HFH",
+        "HHH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "bank",
+    "model": "ply_corl_bank_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/barn_no_planet_restriction.iff",
+    "stem": "barn_no_planet_restriction",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 4,
+      "height": 3,
+      "pivotX": 2,
+      "pivotZ": 1,
+      "rows": [
+        "FFFF",
+        "FFFF",
+        "FFFF"
+      ],
+      "widthMetres": 32,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "barn",
+    "model": "poi_all_barn_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/cantina_tatooine.iff",
+    "stem": "cantina_tatooine",
+    "civic": false,
+    "cityRank": 2,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HHHHHHH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "cantina",
+    "model": "lod/ply_tato_cantina_s01_r0_exterior_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/cantina_naboo.iff",
+    "stem": "cantina_naboo",
+    "civic": false,
+    "cityRank": 2,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HHHHHHH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "cantina",
+    "model": "lod/ply_nboo_cantina_s01_r0_exterior_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/cantina_corellia.iff",
+    "stem": "cantina_corellia",
+    "civic": false,
+    "cityRank": 2,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HHHHHHH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "cantina",
+    "model": "lod/ply_corl_cantina_s01_r0_exterior_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/cloning_tatooine.iff",
+    "stem": "cloning_tatooine",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": true,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "cloning",
+    "model": "lod/ply_tato_cloning_facility_s01_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/cloning_corellia.iff",
+    "stem": "cloning_corellia",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": true,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "cloning",
+    "model": "lod/ply_corl_cloning_facility_s01_r0_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/cloning_naboo.iff",
+    "stem": "cloning_naboo",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": true,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "cloning",
+    "model": "lod/ply_nboo_cloning_facility_s01_r0_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/diner_no_planet_restriction.iff",
+    "stem": "diner_no_planet_restriction",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "diner",
+    "model": "poi_all_diner_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/hospital_tatooine.iff",
+    "stem": "hospital_tatooine",
+    "civic": false,
+    "cityRank": 3,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFF",
+        "HFFFF",
+        "HFFFF",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "hospital",
+    "model": "lod/ply_tato_hospital_s01_r0_exterior_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/hospital_corellia.iff",
+    "stem": "hospital_corellia",
+    "civic": false,
+    "cityRank": 3,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFF",
+        "HFFFF",
+        "HFFFF",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "hospital",
+    "model": "lod/ply_corl_hospital_s01_r0_exterior_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/hospital_naboo.iff",
+    "stem": "hospital_naboo",
+    "civic": false,
+    "cityRank": 3,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFF",
+        "HFFFF",
+        "HFFFF",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "hospital",
+    "model": "lod/ply_nboo_hospital_s01_r0_exterior_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/theater_tatooine.iff",
+    "stem": "theater_tatooine",
+    "civic": false,
+    "cityRank": 4,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 6,
+      "pivotX": 2,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 48
+    },
+    "nameTable": "building_name",
+    "nameKey": "theater",
+    "model": "lod/ply_tato_theater_s01_r0_exterior_mesh",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/theater_naboo.iff",
+    "stem": "theater_naboo",
+    "civic": false,
+    "cityRank": 4,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 6,
+      "pivotX": 2,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 48
+    },
+    "nameTable": "building_name",
+    "nameKey": "theater",
+    "model": "lod/ply_nboo_theater_s01_r0_exterior_mesh",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/theater_corellia.iff",
+    "stem": "theater_corellia",
+    "civic": false,
+    "cityRank": 4,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 6,
+      "pivotX": 2,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 48
+    },
+    "nameTable": "building_name",
+    "nameKey": "theater",
+    "model": "lod/ply_corl_theater_s01_r0_exterior_mesh",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/shuttleport_tatooine.iff",
+    "stem": "shuttleport_tatooine",
+    "civic": true,
+    "cityRank": 4,
+    "cityCost": 2,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": true,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "shuttleport",
+    "model": "ply_tato_shuttleport_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/shuttleport_naboo.iff",
+    "stem": "shuttleport_naboo",
+    "civic": true,
+    "cityRank": 4,
+    "cityCost": 2,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": true,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "shuttleport",
+    "model": "ply_nboo_shuttleport_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/shuttleport_corellia.iff",
+    "stem": "shuttleport_corellia",
+    "civic": true,
+    "cityRank": 4,
+    "cityCost": 2,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": true,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "shuttleport",
+    "model": "ply_corl_shuttleport_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_lrg_01.iff",
+    "stem": "garden_corellia_lrg_01",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_lrg_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_lrg_02.iff",
+    "stem": "garden_corellia_lrg_02",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_lrg_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_lrg_03.iff",
+    "stem": "garden_corellia_lrg_03",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_lrg_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_lrg_04.iff",
+    "stem": "garden_corellia_lrg_04",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_lrg_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_lrg_05.iff",
+    "stem": "garden_corellia_lrg_05",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_lrg_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_med_01.iff",
+    "stem": "garden_corellia_med_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_med_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_med_02.iff",
+    "stem": "garden_corellia_med_02",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_med_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_med_03.iff",
+    "stem": "garden_corellia_med_03",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_med_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_med_04.iff",
+    "stem": "garden_corellia_med_04",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_med_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_med_05.iff",
+    "stem": "garden_corellia_med_05",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_med_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_sml_01.iff",
+    "stem": "garden_corellia_sml_01",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_sml_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_sml_02.iff",
+    "stem": "garden_corellia_sml_02",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_sml_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_sml_03.iff",
+    "stem": "garden_corellia_sml_03",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_sml_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_sml_04.iff",
+    "stem": "garden_corellia_sml_04",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_sml_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_corellia_sml_05.iff",
+    "stem": "garden_corellia_sml_05",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_corl_garden_sml_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_lrg_01.iff",
+    "stem": "garden_naboo_lrg_01",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_lrg_02.iff",
+    "stem": "garden_naboo_lrg_02",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_lrg_03.iff",
+    "stem": "garden_naboo_lrg_03",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_lrg_04.iff",
+    "stem": "garden_naboo_lrg_04",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_lrg_05.iff",
+    "stem": "garden_naboo_lrg_05",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_med_01.iff",
+    "stem": "garden_naboo_med_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_med_02.iff",
+    "stem": "garden_naboo_med_02",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_med_03.iff",
+    "stem": "garden_naboo_med_03",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_med_04.iff",
+    "stem": "garden_naboo_med_04",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_med_05.iff",
+    "stem": "garden_naboo_med_05",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_sml_01.iff",
+    "stem": "garden_naboo_sml_01",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_sml_02.iff",
+    "stem": "garden_naboo_sml_02",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_sml_03.iff",
+    "stem": "garden_naboo_sml_03",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_sml_04.iff",
+    "stem": "garden_naboo_sml_04",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_naboo_sml_05.iff",
+    "stem": "garden_naboo_sml_05",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_lrg_01.iff",
+    "stem": "garden_tatooine_lrg_01",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_lrg_02.iff",
+    "stem": "garden_tatooine_lrg_02",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_lrg_03.iff",
+    "stem": "garden_tatooine_lrg_03",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_lrg_04.iff",
+    "stem": "garden_tatooine_lrg_04",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_lrg_05.iff",
+    "stem": "garden_tatooine_lrg_05",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_lrg_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_med_01.iff",
+    "stem": "garden_tatooine_med_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_med_02.iff",
+    "stem": "garden_tatooine_med_02",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_med_03.iff",
+    "stem": "garden_tatooine_med_03",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_med_04.iff",
+    "stem": "garden_tatooine_med_04",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_med_05.iff",
+    "stem": "garden_tatooine_med_05",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_med_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_sml_01.iff",
+    "stem": "garden_tatooine_sml_01",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_sml_02.iff",
+    "stem": "garden_tatooine_sml_02",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_sml_03.iff",
+    "stem": "garden_tatooine_sml_03",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_sml_04.iff",
+    "stem": "garden_tatooine_sml_04",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_tatooine_sml_05.iff",
+    "stem": "garden_tatooine_sml_05",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_sml_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_dantooine_lrg_01.iff",
+    "stem": "garden_dantooine_lrg_01",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_lrg_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_dantooine_med_01.iff",
+    "stem": "garden_dantooine_med_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_med_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_dantooine_sml_01.iff",
+    "stem": "garden_dantooine_sml_01",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_tato_garden_sml_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_dathomir_lrg_01.iff",
+    "stem": "garden_dathomir_lrg_01",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_lrg_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_dathomir_med_01.iff",
+    "stem": "garden_dathomir_med_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_med_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_dathomir_sml_01.iff",
+    "stem": "garden_dathomir_sml_01",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_sml_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_endor_lrg_01.iff",
+    "stem": "garden_endor_lrg_01",
+    "civic": true,
+    "cityRank": 3,
+    "cityCost": 6,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_lrg_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_endor_med_01.iff",
+    "stem": "garden_endor_med_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_med_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_endor_sml_01.iff",
+    "stem": "garden_endor_sml_01",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden",
+    "model": "ply_nboo_garden_sml_s01",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_garage_tatooine_style_01.iff",
+    "stem": "player_garage_tatooine_style_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": true,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "ply_tatooine_garage_s01",
+    "model": "ply_tato_garage_s01",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_garage_naboo_style_01.iff",
+    "stem": "player_garage_naboo_style_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": true,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "ply_naboo_garage_s01",
+    "model": "ply_nboo_garage_s01",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/player_garage_corellia_style_01.iff",
+    "stem": "player_garage_corellia_style_01",
+    "civic": true,
+    "cityRank": 2,
+    "cityCost": 3,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": true,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "ply_corellia_garage_s01",
+    "model": "ply_corl_garage_s01",
+    "scenes": [
+      "corellia",
+      "talus"
+    ]
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s01_rebel_pvp.iff",
+    "stem": "hq_s01_rebel_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s01_rebel_pvp",
+    "model": "lod/mun_all_military_storage_shed_rebl_s01_r0_exterior_mesh_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s01_imp_pvp.iff",
+    "stem": "hq_s01_imp_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s01_imp_pvp",
+    "model": "lod/mun_all_military_storage_shed_impl_s01_r0_exterior_mesh_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s02_rebel_pvp.iff",
+    "stem": "hq_s02_rebel_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s02_rebel_pvp",
+    "model": "lod/poi_all_impl_bunker_s01_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s02_imp_pvp.iff",
+    "stem": "hq_s02_imp_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s02_imp_pvp",
+    "model": "lod/poi_all_impl_bunker_s01_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s03_rebel_pvp.iff",
+    "stem": "hq_s03_rebel_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s03_rebel_pvp",
+    "model": "lod/poi_all_impl_bunker_s02_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s03_imp_pvp.iff",
+    "stem": "hq_s03_imp_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s03_imp_pvp",
+    "model": "lod/poi_all_impl_bunker_s02_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s04_rebel_pvp.iff",
+    "stem": "hq_s04_rebel_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s04_rebel_pvp",
+    "model": "lod/poi_all_impl_bunker_s03_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s04_imp_pvp.iff",
+    "stem": "hq_s04_imp_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s04_imp_pvp",
+    "model": "lod/poi_all_impl_bunker_s03_r0_exterior_mesh_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s05_rebel_pvp.iff",
+    "stem": "hq_s05_rebel_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s05_rebel_pvp",
+    "model": "lod/mun_all_military_base_police_station_rebl_s01_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/faction_perk/hq/hq_s05_imp_pvp.iff",
+    "stem": "hq_s05_imp_pvp",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "faction_perk_n",
+    "nameKey": "hq_s05_imp",
+    "model": "lod/mun_all_military_base_police_station_impl_s01_r0_mesh",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_mustafar_lg.iff",
+    "stem": "player_house_mustafar_lg",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 8,
+      "height": 8,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HHHHHHHH",
+        "HHHHHHHH",
+        "HHFFFFHH",
+        "HHFFFFHH",
+        "HHFFFFHH",
+        "HHFFFFHH",
+        "HHHHHHHH",
+        "HHHHHHHH"
+      ],
+      "widthMetres": 64,
+      "depthMetres": 64
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_mustafar_house_lg_n",
+    "model": "ply_all_house_lg_s03_fp1_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/city/garden_imperial_01.iff",
+    "stem": "garden_imperial_01",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden_imperial_01",
+    "model": "ply_imp_garden_base",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/city/garden_rebel_01.iff",
+    "stem": "garden_rebel_01",
+    "civic": true,
+    "cityRank": 1,
+    "cityCost": 5,
+    "lots": 0,
+    "maintenanceRate": 0,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "garden_rebel_01",
+    "model": "ply_reb_garden_base",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_tatooine_small_window_style_01.iff",
+    "stem": "player_house_tatooine_small_window_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_tatt_style01_small_window",
+    "model": "ply_tato_house_sm_s01_window_hue_r0",
+    "scenes": [
+      "dantooine",
+      "lok",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_naboo_small_window_style_01.iff",
+    "stem": "player_house_naboo_small_window_style_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 2,
+      "rows": [
+        "HFH",
+        "FFF",
+        "HFH",
+        ".H."
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "housing_naboo_window_small",
+    "model": "ply_nboo_house_sm_s01_window_hue_r0",
+    "scenes": [
+      "dantooine",
+      "naboo",
+      "rori"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_generic_small_windowed.iff",
+    "stem": "player_house_generic_small_windowed",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "house_generic_window_small",
+    "model": "ply_all_house_sm_s01_window_hue_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_medium_windowed.iff",
+    "stem": "player_house_generic_medium_windowed",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFF",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_generic_medium_windowed",
+    "model": "ply_all_house_m_window_s01_hue_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_small_window_style_03.iff",
+    "stem": "player_house_generic_small_window_style_03",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HHH",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_generic_small_window_style_03",
+    "model": "ply_house_sm_s03_hue_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_medium_windowed_s02.iff",
+    "stem": "player_house_generic_medium_windowed_s02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 9,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 4,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFF",
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 32
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_generic_medium_windowed_s02",
+    "model": "ply_all_house_m_window_s02_hue_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_large_window_s01.iff",
+    "stem": "player_house_generic_large_window_s01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 5,
+      "pivotX": 3,
+      "pivotZ": 2,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_generic_large_window_s01",
+    "model": "ply_all_house_lg_window_s02_hue_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_generic_large_window_s02.iff",
+    "stem": "player_house_generic_large_window_s02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 5,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 5,
+      "pivotX": 3,
+      "pivotZ": 2,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_generic_large_window_s02",
+    "model": "ply_house_med_s03_hue_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_hangar.iff",
+    "stem": "player_house_hangar",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 4,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_hangar_n",
+    "model": "ply_all_hangar_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_atat.iff",
+    "stem": "player_house_atat",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 10,
+      "pivotX": 3,
+      "pivotZ": 5,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 80
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_atat_n",
+    "model": "ply_all_atat_house_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_tcg_emperors_spire.iff",
+    "stem": "player_house_tcg_emperors_spire",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 8,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH"
+      ],
+      "widthMetres": 64,
+      "depthMetres": 56
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_tcg_emperors_spire_n",
+    "model": "ply_all_emperors_spire_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_tcg_rebel_spire.iff",
+    "stem": "player_house_tcg_rebel_spire",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 4,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 8,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH"
+      ],
+      "widthMetres": 64,
+      "depthMetres": 56
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_tcg_rebel_spire_n",
+    "model": "ply_all_rebel_spire_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_sandcrawler.iff",
+    "stem": "player_house_sandcrawler",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 3,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 10,
+      "pivotX": 3,
+      "pivotZ": 4,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 80
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_sandcrawler_n",
+    "model": "ply_all_sandcrawler_house_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_pgc_merchant_tent_s01.iff",
+    "stem": "player_pgc_merchant_tent_s01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 3,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFH",
+        "FFF",
+        "HFH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "merchant_tent_pgc",
+    "model": "ply_pgc_merchant_tent_s01_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_tcg_commando_bunker.iff",
+    "stem": "player_house_tcg_commando_bunker",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_tcg_commando_bunker_n",
+    "model": "ply_all_commando_bunker_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_tcg_vehicle_garage.iff",
+    "stem": "player_house_tcg_vehicle_garage",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 4,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 8,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH",
+        "HFFFFFFH"
+      ],
+      "widthMetres": 64,
+      "depthMetres": 56
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_tcg_vehicle_garage_n",
+    "model": "ply_all_garage_r0_exterior",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_tcg_vip_bunker.iff",
+    "stem": "player_house_tcg_vip_bunker",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "HHHHH",
+        "HFFFH",
+        "HFFFH",
+        "HFFFH",
+        "HHHHH"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_tcg_vip_bunker_n",
+    "model": "tcg_vip_small_bunker_r0",
+    "scenes": null
+  },
+  {
+    "template": "object/building/player/player_house_tcg_8_bespin_house.iff",
+    "stem": "player_house_tcg_8_bespin_house",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 7,
+      "pivotX": 3,
+      "pivotZ": 3,
+      "rows": [
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF",
+        "FFFFFFF"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 56
+    },
+    "nameTable": "static_item_n",
+    "nameKey": "player_house_tcg_8_bespin_house_n",
+    "model": "ply_all_bespin_house_r0_exterior",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_tcg_8_yoda_house.iff",
+    "stem": "player_house_tcg_8_yoda_house",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 5,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_tcg_8_yoda_house_n",
+    "model": "ply_all_yoda_house_r0_exterior",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_yt1300.iff",
+    "stem": "player_house_yt1300",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 5,
+      "height": 6,
+      "pivotX": 2,
+      "pivotZ": 2,
+      "rows": [
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF",
+        "FFFFF"
+      ],
+      "widthMetres": 40,
+      "depthMetres": 48
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_yt1300_n",
+    "model": "ply_yt1300_house_r0",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_tree_house_01.iff",
+    "stem": "player_house_tree_house_01",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 6,
+      "height": 5,
+      "pivotX": 3,
+      "pivotZ": 1,
+      "rows": [
+        "FFFFHH",
+        "FFFFFH",
+        "FFFFFF",
+        "FFFFFF",
+        "FFFFFF"
+      ],
+      "widthMetres": 48,
+      "depthMetres": 40
+    },
+    "nameTable": "building_name",
+    "nameKey": "player_house_tree_house_01_n",
+    "model": "ply_all_tree_house_r0_exterior",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_wod_ns_hut.iff",
+    "stem": "player_house_wod_ns_hut",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFH",
+        "FFF",
+        "HFH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "ns_hut",
+    "model": "ply_all_dant_small_mud_hut_r0",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_wod_sm_hut.iff",
+    "stem": "player_house_wod_sm_hut",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 1,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 3,
+      "height": 3,
+      "pivotX": 1,
+      "pivotZ": 1,
+      "rows": [
+        "HFH",
+        "FFF",
+        "HFH"
+      ],
+      "widthMetres": 24,
+      "depthMetres": 24
+    },
+    "nameTable": "building_name",
+    "nameKey": "sm_hut",
+    "model": "ply_all_dath_mtn_clan_hut_r0",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_jabbas_sail_barge.iff",
+    "stem": "player_house_jabbas_sail_barge",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": 2,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": {
+      "width": 7,
+      "height": 10,
+      "pivotX": 3,
+      "pivotZ": 5,
+      "rows": [
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH",
+        "HFFFFFH"
+      ],
+      "widthMetres": 56,
+      "depthMetres": 80
+    },
+    "nameTable": "player_structure",
+    "nameKey": "player_house_jabbas_sail_barge_n",
+    "model": "ply_all_sail_barge_r0_exterior",
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "lok",
+      "naboo",
+      "rori",
+      "talus",
+      "tatooine"
+    ]
+  },
+  {
+    "template": "object/building/player/player_house_tree_house_02.iff",
+    "stem": "player_house_tree_house_02",
+    "civic": false,
+    "cityRank": 0,
+    "cityCost": 0,
+    "lots": null,
+    "maintenanceRate": 13,
+    "powerRate": 0,
+    "isShuttleport": false,
+    "isCloningFacility": false,
+    "isGarage": false,
+    "footprint": null,
+    "nameTable": "building_name",
+    "nameKey": "player_house_tree_house_02_n",
+    "model": null,
+    "scenes": [
+      "corellia",
+      "dantooine",
+      "naboo",
+      "rori",
+      "talus"
+    ]
+  }
+]

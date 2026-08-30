@@ -1,0 +1,2058 @@
+[
+  {
+    "name": "GOT_none",
+    "id": "none",
+    "value": 0,
+    "category": 0,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_corpse",
+    "id": "corpse",
+    "value": 1,
+    "category": 0,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_group",
+    "id": "group",
+    "value": 2,
+    "category": 0,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_guild",
+    "id": "guild",
+    "value": 3,
+    "category": 0,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_lair",
+    "id": "lair",
+    "value": 4,
+    "category": 0,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_static",
+    "id": "static",
+    "value": 5,
+    "category": 0,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_camp",
+    "id": "camp",
+    "value": 6,
+    "category": 0,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_vendor",
+    "id": "vendor",
+    "value": 7,
+    "category": 0,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_loadbeacon",
+    "id": "loadbeacon",
+    "value": 8,
+    "category": 0,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor",
+    "id": "armor",
+    "value": 256,
+    "category": 256,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_body",
+    "id": "armor_body",
+    "value": 257,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_head",
+    "id": "armor_head",
+    "value": 258,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_misc",
+    "id": "armor_misc",
+    "value": 259,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_leg",
+    "id": "armor_leg",
+    "value": 260,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_arm",
+    "id": "armor_arm",
+    "value": 261,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_hand",
+    "id": "armor_hand",
+    "value": 262,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_foot",
+    "id": "armor_foot",
+    "value": 263,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_shield",
+    "id": "armor_shield",
+    "value": 264,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_layer",
+    "id": "armor_layer",
+    "value": 265,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_segment",
+    "id": "armor_segment",
+    "value": 266,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_core",
+    "id": "armor_core",
+    "value": 267,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_armor_psg",
+    "id": "armor_psg",
+    "value": 268,
+    "category": 256,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_building",
+    "id": "building",
+    "value": 512,
+    "category": 512,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_building_municipal",
+    "id": "building_municipal",
+    "value": 513,
+    "category": 512,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_building_player",
+    "id": "building_player",
+    "value": 514,
+    "category": 512,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_building_factional",
+    "id": "building_factional",
+    "value": 515,
+    "category": 512,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_creature",
+    "id": "creature",
+    "value": 1024,
+    "category": 1024,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_creature_character",
+    "id": "creature_character",
+    "value": 1025,
+    "category": 1024,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_creature_droid",
+    "id": "creature_droid",
+    "value": 1026,
+    "category": 1024,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_creature_droid_probe",
+    "id": "creature_droid_probe",
+    "value": 1027,
+    "category": 1024,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_creature_monster",
+    "id": "creature_monster",
+    "value": 1028,
+    "category": 1024,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data",
+    "id": "data",
+    "value": 2048,
+    "category": 2048,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_draft_schematic",
+    "id": "data_draft_schematic",
+    "value": 2049,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_manufacturing_schematic",
+    "id": "data_manufacturing_schematic",
+    "value": 2050,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_mission_object",
+    "id": "data_mission_object",
+    "value": 2051,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_token",
+    "id": "data_token",
+    "value": 2052,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_waypoint",
+    "id": "data_waypoint",
+    "value": 2053,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_fictional",
+    "id": "data_fictional",
+    "value": 2054,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_pet_control_device",
+    "id": "data_pet_control_device",
+    "value": 2055,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_vehicle_control_device",
+    "id": "data_vehicle_control_device",
+    "value": 2056,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_draft_schematic_read_only",
+    "id": "data_draft_schematic_read_only",
+    "value": 2057,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_ship_control_device",
+    "id": "data_ship_control_device",
+    "value": 2058,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_droid_control_device",
+    "id": "data_droid_control_device",
+    "value": 2059,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_house_control_device",
+    "id": "data_house_control_device",
+    "value": 2060,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_vendor_control_device",
+    "id": "data_vendor_control_device",
+    "value": 2061,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_data_player_quest_object",
+    "id": "data_player_quest_object",
+    "value": 2062,
+    "category": 2048,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_installation",
+    "id": "installation",
+    "value": 4096,
+    "category": 4096,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_installation_factory",
+    "id": "installation_factory",
+    "value": 4097,
+    "category": 4096,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_installation_generator",
+    "id": "installation_generator",
+    "value": 4098,
+    "category": 4096,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_installation_harvester",
+    "id": "installation_harvester",
+    "value": 4099,
+    "category": 4096,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_installation_turret",
+    "id": "installation_turret",
+    "value": 4100,
+    "category": 4096,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_installation_minefield",
+    "id": "installation_minefield",
+    "value": 4101,
+    "category": 4096,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc",
+    "id": "misc",
+    "value": 8192,
+    "category": 8192,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_ammunition",
+    "id": "misc_ammunition",
+    "value": 8193,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_chemical",
+    "id": "misc_chemical",
+    "value": 8194,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_clothing_DUMMY",
+    "id": "misc_clothing_DUMMY",
+    "value": 8195,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": true
+  },
+  {
+    "name": "GOT_misc_component_DUMMY",
+    "id": "misc_component_DUMMY",
+    "value": 8196,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": true
+  },
+  {
+    "name": "GOT_misc_container",
+    "id": "misc_container",
+    "value": 8197,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_crafting_station",
+    "id": "misc_crafting_station",
+    "value": 8198,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_deed_DUMMY",
+    "id": "misc_deed_DUMMY",
+    "value": 8199,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": true
+  },
+  {
+    "name": "GOT_misc_electronics",
+    "id": "misc_electronics",
+    "value": 8200,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_flora",
+    "id": "misc_flora",
+    "value": 8201,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_food",
+    "id": "misc_food",
+    "value": 8202,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_furniture",
+    "id": "misc_furniture",
+    "value": 8203,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_instrument",
+    "id": "misc_instrument",
+    "value": 8204,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_pharmaceutical",
+    "id": "misc_pharmaceutical",
+    "value": 8205,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_resource_container_DUMMY",
+    "id": "misc_resource_container_DUMMY",
+    "value": 8206,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": true
+  },
+  {
+    "name": "GOT_misc_sign",
+    "id": "misc_sign",
+    "value": 8207,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_counter",
+    "id": "misc_counter",
+    "value": 8208,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_factory_crate",
+    "id": "misc_factory_crate",
+    "value": 8209,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_ticket_travel",
+    "id": "misc_ticket_travel",
+    "value": 8210,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_item",
+    "id": "misc_item",
+    "value": 8211,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_trap",
+    "id": "misc_trap",
+    "value": 8212,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_container_wearable",
+    "id": "misc_container_wearable",
+    "value": 8213,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_fishing_pole",
+    "id": "misc_fishing_pole",
+    "value": 8214,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_fishing_bait",
+    "id": "misc_fishing_bait",
+    "value": 8215,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_drink",
+    "id": "misc_drink",
+    "value": 8216,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_firework",
+    "id": "misc_firework",
+    "value": 8217,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_item_usable",
+    "id": "misc_item_usable",
+    "value": 8218,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_petmed",
+    "id": "misc_petmed",
+    "value": 8219,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_firework_show",
+    "id": "misc_firework_show",
+    "value": 8220,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_clothing_attachment",
+    "id": "misc_clothing_attachment",
+    "value": 8221,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_live_sample",
+    "id": "misc_live_sample",
+    "value": 8222,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_armor_attachment",
+    "id": "misc_armor_attachment",
+    "value": 8223,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_community_crafting_project",
+    "id": "misc_community_crafting_project",
+    "value": 8224,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_force_crystal",
+    "id": "misc_force_crystal",
+    "value": 8225,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_droid_programming_chip",
+    "id": "misc_droid_programming_chip",
+    "value": 8226,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_asteroid",
+    "id": "misc_asteroid",
+    "value": 8227,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_pob_ship_pilot_chair",
+    "id": "misc_pob_ship_pilot_chair",
+    "value": 8228,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_operations_chair",
+    "id": "misc_operations_chair",
+    "value": 8229,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_turret_access_ladder",
+    "id": "misc_turret_access_ladder",
+    "value": 8230,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_container_ship_loot",
+    "id": "misc_container_ship_loot",
+    "value": 8231,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_armor_noequip",
+    "id": "misc_armor_noequip",
+    "value": 8232,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_enzyme",
+    "id": "misc_enzyme",
+    "value": 8233,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_food_pet",
+    "id": "misc_food_pet",
+    "value": 8234,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_collection",
+    "id": "misc_collection",
+    "value": 8235,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_container_public",
+    "id": "misc_container_public",
+    "value": 8236,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_ground_target",
+    "id": "misc_ground_target",
+    "value": 8237,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_blueprint",
+    "id": "misc_blueprint",
+    "value": 8238,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_enzyme_isomerase",
+    "id": "misc_enzyme_isomerase",
+    "value": 8239,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_enzyme_lyase",
+    "id": "misc_enzyme_lyase",
+    "value": 8240,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_enzyme_hydrolase",
+    "id": "misc_enzyme_hydrolase",
+    "value": 8241,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_tcg_card",
+    "id": "misc_tcg_card",
+    "value": 8242,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_appearance_only",
+    "id": "misc_appearance_only",
+    "value": 8243,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_misc_appearance_only_invisible",
+    "id": "misc_appearance_only_invisible",
+    "value": 8244,
+    "category": 8192,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal",
+    "id": "terminal",
+    "value": 16384,
+    "category": 16384,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_bank",
+    "id": "terminal_bank",
+    "value": 16385,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_bazaar",
+    "id": "terminal_bazaar",
+    "value": 16386,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_cloning",
+    "id": "terminal_cloning",
+    "value": 16387,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_insurance",
+    "id": "terminal_insurance",
+    "value": 16388,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_manage",
+    "id": "terminal_manage",
+    "value": 16389,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_mission",
+    "id": "terminal_mission",
+    "value": 16390,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_permissions",
+    "id": "terminal_permissions",
+    "value": 16391,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_player_structure",
+    "id": "terminal_player_structure",
+    "value": 16392,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_shipping",
+    "id": "terminal_shipping",
+    "value": 16393,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_travel",
+    "id": "terminal_travel",
+    "value": 16394,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_space",
+    "id": "terminal_space",
+    "value": 16395,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_misc",
+    "id": "terminal_misc",
+    "value": 16396,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_terminal_space_npe",
+    "id": "terminal_space_npe",
+    "value": 16397,
+    "category": 16384,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_tool",
+    "id": "tool",
+    "value": 32768,
+    "category": 32768,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_tool_crafting",
+    "id": "tool_crafting",
+    "value": 32769,
+    "category": 32768,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_tool_survey",
+    "id": "tool_survey",
+    "value": 32770,
+    "category": 32768,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_tool_repair",
+    "id": "tool_repair",
+    "value": 32771,
+    "category": 32768,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_tool_camp_kit",
+    "id": "tool_camp_kit",
+    "value": 32772,
+    "category": 32768,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_tool_ship_component_repair",
+    "id": "tool_ship_component_repair",
+    "value": 32773,
+    "category": 32768,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_vehicle",
+    "id": "vehicle",
+    "value": 65536,
+    "category": 65536,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_vehicle_hover",
+    "id": "vehicle_hover",
+    "value": 65537,
+    "category": 65536,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_vehicle_hover_ai",
+    "id": "vehicle_hover_ai",
+    "value": 65538,
+    "category": 65536,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon",
+    "id": "weapon",
+    "value": 131072,
+    "category": 131072,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_melee_misc",
+    "id": "weapon_melee_misc",
+    "value": 131073,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_ranged_misc",
+    "id": "weapon_ranged_misc",
+    "value": 131074,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_ranged_thrown",
+    "id": "weapon_ranged_thrown",
+    "value": 131075,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_heavy_misc",
+    "id": "weapon_heavy_misc",
+    "value": 131076,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_heavy_mine",
+    "id": "weapon_heavy_mine",
+    "value": 131077,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_heavy_special",
+    "id": "weapon_heavy_special",
+    "value": 131078,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_melee_1h",
+    "id": "weapon_melee_1h",
+    "value": 131079,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_melee_2h",
+    "id": "weapon_melee_2h",
+    "value": 131080,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_melee_polearm",
+    "id": "weapon_melee_polearm",
+    "value": 131081,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_ranged_pistol",
+    "id": "weapon_ranged_pistol",
+    "value": 131082,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_ranged_carbine",
+    "id": "weapon_ranged_carbine",
+    "value": 131083,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_weapon_ranged_rifle",
+    "id": "weapon_ranged_rifle",
+    "value": 131084,
+    "category": 131072,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component",
+    "id": "component",
+    "value": 262144,
+    "category": 262144,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_armor",
+    "id": "component_armor",
+    "value": 262145,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_chemistry",
+    "id": "component_chemistry",
+    "value": 262146,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_clothing",
+    "id": "component_clothing",
+    "value": 262147,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_droid",
+    "id": "component_droid",
+    "value": 262148,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_electronics",
+    "id": "component_electronics",
+    "value": 262149,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_munition",
+    "id": "component_munition",
+    "value": 262150,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_structure",
+    "id": "component_structure",
+    "value": 262151,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_weapon_melee",
+    "id": "component_weapon_melee",
+    "value": 262152,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_weapon_ranged",
+    "id": "component_weapon_ranged",
+    "value": 262153,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_tissue",
+    "id": "component_tissue",
+    "value": 262154,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_genetic",
+    "id": "component_genetic",
+    "value": 262155,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_saber_crystal",
+    "id": "component_saber_crystal",
+    "value": 262156,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_community_crafting",
+    "id": "component_community_crafting",
+    "value": 262157,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_component_new_armor",
+    "id": "component_new_armor",
+    "value": 262158,
+    "category": 262144,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_weapon",
+    "id": "powerup_weapon",
+    "value": 524288,
+    "category": 524288,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_weapon_melee",
+    "id": "powerup_weapon_melee",
+    "value": 524289,
+    "category": 524288,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_weapon_ranged",
+    "id": "powerup_weapon_ranged",
+    "value": 524290,
+    "category": 524288,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_weapon_thrown",
+    "id": "powerup_weapon_thrown",
+    "value": 524291,
+    "category": 524288,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_weapon_heavy",
+    "id": "powerup_weapon_heavy",
+    "value": 524292,
+    "category": 524288,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_weapon_mine",
+    "id": "powerup_weapon_mine",
+    "value": 524293,
+    "category": 524288,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_weapon_heavy_special",
+    "id": "powerup_weapon_heavy_special",
+    "value": 524294,
+    "category": 524288,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor",
+    "id": "powerup_armor",
+    "value": 1048576,
+    "category": 1048576,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_body",
+    "id": "powerup_armor_body",
+    "value": 1048577,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_head",
+    "id": "powerup_armor_head",
+    "value": 1048578,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_misc",
+    "id": "powerup_armor_misc",
+    "value": 1048579,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_leg",
+    "id": "powerup_armor_leg",
+    "value": 1048580,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_arm",
+    "id": "powerup_armor_arm",
+    "value": 1048581,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_hand",
+    "id": "powerup_armor_hand",
+    "value": 1048582,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_foot",
+    "id": "powerup_armor_foot",
+    "value": 1048583,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_layer",
+    "id": "powerup_armor_layer",
+    "value": 1048584,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_segment",
+    "id": "powerup_armor_segment",
+    "value": 1048585,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_powerup_armor_core",
+    "id": "powerup_armor_core",
+    "value": 1048586,
+    "category": 1048576,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_jewelry",
+    "id": "jewelry",
+    "value": 2097152,
+    "category": 2097152,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_jewelry_ring",
+    "id": "jewelry_ring",
+    "value": 2097153,
+    "category": 2097152,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_jewelry_bracelet",
+    "id": "jewelry_bracelet",
+    "value": 2097154,
+    "category": 2097152,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_jewelry_necklace",
+    "id": "jewelry_necklace",
+    "value": 2097155,
+    "category": 2097152,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_jewelry_earring",
+    "id": "jewelry_earring",
+    "value": 2097156,
+    "category": 2097152,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container",
+    "id": "resource_container",
+    "value": 4194304,
+    "category": 4194304,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_energy_gas",
+    "id": "resource_container_energy_gas",
+    "value": 4194305,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_energy_liquid",
+    "id": "resource_container_energy_liquid",
+    "value": 4194306,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_energy_radioactive",
+    "id": "resource_container_energy_radioactive",
+    "value": 4194307,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_energy_solid",
+    "id": "resource_container_energy_solid",
+    "value": 4194308,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_inorganic_chemicals",
+    "id": "resource_container_inorganic_chemicals",
+    "value": 4194309,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_inorganic_gas",
+    "id": "resource_container_inorganic_gas",
+    "value": 4194310,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_inorganic_minerals",
+    "id": "resource_container_inorganic_minerals",
+    "value": 4194311,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_inorganic_water",
+    "id": "resource_container_inorganic_water",
+    "value": 4194312,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_organic_food",
+    "id": "resource_container_organic_food",
+    "value": 4194313,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_organic_hide",
+    "id": "resource_container_organic_hide",
+    "value": 4194314,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_organic_structure",
+    "id": "resource_container_organic_structure",
+    "value": 4194315,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_pseudo",
+    "id": "resource_container_pseudo",
+    "value": 4194316,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_resource_container_space",
+    "id": "resource_container_space",
+    "value": 4194317,
+    "category": 4194304,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_deed",
+    "id": "deed",
+    "value": 8388608,
+    "category": 8388608,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_deed_building",
+    "id": "deed_building",
+    "value": 8388609,
+    "category": 8388608,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_deed_installation",
+    "id": "deed_installation",
+    "value": 8388610,
+    "category": 8388608,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_deed_pet",
+    "id": "deed_pet",
+    "value": 8388611,
+    "category": 8388608,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_deed_droid",
+    "id": "deed_droid",
+    "value": 8388612,
+    "category": 8388608,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_deed_vehicle",
+    "id": "deed_vehicle",
+    "value": 8388613,
+    "category": 8388608,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing",
+    "id": "clothing",
+    "value": 16777216,
+    "category": 16777216,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_bandolier",
+    "id": "clothing_bandolier",
+    "value": 16777217,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_belt",
+    "id": "clothing_belt",
+    "value": 16777218,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_bodysuit",
+    "id": "clothing_bodysuit",
+    "value": 16777219,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_cape",
+    "id": "clothing_cape",
+    "value": 16777220,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_cloak",
+    "id": "clothing_cloak",
+    "value": 16777221,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_foot",
+    "id": "clothing_foot",
+    "value": 16777222,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_dress",
+    "id": "clothing_dress",
+    "value": 16777223,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_hand",
+    "id": "clothing_hand",
+    "value": 16777224,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_eye",
+    "id": "clothing_eye",
+    "value": 16777225,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_head",
+    "id": "clothing_head",
+    "value": 16777226,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_jacket",
+    "id": "clothing_jacket",
+    "value": 16777227,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_pants",
+    "id": "clothing_pants",
+    "value": 16777228,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_robe",
+    "id": "clothing_robe",
+    "value": 16777229,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_shirt",
+    "id": "clothing_shirt",
+    "value": 16777230,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_vest",
+    "id": "clothing_vest",
+    "value": 16777231,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_wookiee",
+    "id": "clothing_wookiee",
+    "value": 16777232,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_misc",
+    "id": "clothing_misc",
+    "value": 16777233,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_clothing_skirt",
+    "id": "clothing_skirt",
+    "value": 16777234,
+    "category": 16777216,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component",
+    "id": "ship_component",
+    "value": 1073741824,
+    "category": 1073741824,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_reactor",
+    "id": "ship_component_reactor",
+    "value": 1073741825,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_engine",
+    "id": "ship_component_engine",
+    "value": 1073741826,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_shield",
+    "id": "ship_component_shield",
+    "value": 1073741827,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_armor",
+    "id": "ship_component_armor",
+    "value": 1073741828,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_weapon",
+    "id": "ship_component_weapon",
+    "value": 1073741829,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_capacitor",
+    "id": "ship_component_capacitor",
+    "value": 1073741830,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_booster",
+    "id": "ship_component_booster",
+    "value": 1073741831,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_droid_interface",
+    "id": "ship_component_droid_interface",
+    "value": 1073741832,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_hangar",
+    "id": "ship_component_hangar",
+    "value": 1073741833,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_targeting_station",
+    "id": "ship_component_targeting_station",
+    "value": 1073741834,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_bridge",
+    "id": "ship_component_bridge",
+    "value": 1073741835,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_chassis",
+    "id": "ship_component_chassis",
+    "value": 1073741836,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_missilepack",
+    "id": "ship_component_missilepack",
+    "value": 1073741837,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_countermeasurepack",
+    "id": "ship_component_countermeasurepack",
+    "value": 1073741838,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_missilelauncher",
+    "id": "ship_component_missilelauncher",
+    "value": 1073741839,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_countermeasurelauncher",
+    "id": "ship_component_countermeasurelauncher",
+    "value": 1073741840,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_cargo_hold",
+    "id": "ship_component_cargo_hold",
+    "value": 1073741841,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_component_modification",
+    "id": "ship_component_modification",
+    "value": 1073741842,
+    "category": 1073741824,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship",
+    "id": "ship",
+    "value": 536870912,
+    "category": 536870912,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_fighter",
+    "id": "ship_fighter",
+    "value": 536870913,
+    "category": 536870912,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_capital",
+    "id": "ship_capital",
+    "value": 536870914,
+    "category": 536870912,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_station",
+    "id": "ship_station",
+    "value": 536870915,
+    "category": 536870912,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_transport",
+    "id": "ship_transport",
+    "value": 536870916,
+    "category": 536870912,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_mining_asteroid_static",
+    "id": "ship_mining_asteroid_static",
+    "value": 536870917,
+    "category": 536870912,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_ship_mining_asteroid_dynamic",
+    "id": "ship_mining_asteroid_dynamic",
+    "value": 536870918,
+    "category": 536870912,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_cybernetic",
+    "id": "cybernetic",
+    "value": 536871168,
+    "category": 536871168,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_cybernetic_arm",
+    "id": "cybernetic_arm",
+    "value": 536871169,
+    "category": 536871168,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_cybernetic_legs",
+    "id": "cybernetic_legs",
+    "value": 536871170,
+    "category": 536871168,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_cybernetic_torso",
+    "id": "cybernetic_torso",
+    "value": 536871171,
+    "category": 536871168,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_cybernetic_forearm",
+    "id": "cybernetic_forearm",
+    "value": 536871172,
+    "category": 536871168,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_cybernetic_hand",
+    "id": "cybernetic_hand",
+    "value": 536871173,
+    "category": 536871168,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_cybernetic_component",
+    "id": "cybernetic_component",
+    "value": 536871174,
+    "category": 536871168,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_chronicles",
+    "id": "chronicles",
+    "value": 4352,
+    "category": 4352,
+    "isCategoryRoot": true,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_chronicles_relic",
+    "id": "chronicles_relic",
+    "value": 4353,
+    "category": 4352,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_chronicles_chronicle",
+    "id": "chronicles_chronicle",
+    "value": 4354,
+    "category": 4352,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_chronicles_quest_holocron",
+    "id": "chronicles_quest_holocron",
+    "value": 4355,
+    "category": 4352,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_chronicles_quest_holocron_recipe",
+    "id": "chronicles_quest_holocron_recipe",
+    "value": 4356,
+    "category": 4352,
+    "isCategoryRoot": false,
+    "deprecated": false
+  },
+  {
+    "name": "GOT_chronicles_relic_fragment",
+    "id": "chronicles_relic_fragment",
+    "value": 4357,
+    "category": 4352,
+    "isCategoryRoot": false,
+    "deprecated": false
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "metresPerCell": 8,
+  "ranks": [
+    {
+      "rank": 1,
+      "radius": 150,
+      "citizens": 5,
+      "nameKey": "@city/city:rank1"
+    },
+    {
+      "rank": 2,
+      "radius": 200,
+      "citizens": 10,
+      "nameKey": "@city/city:rank2"
+    },
+    {
+      "rank": 3,
+      "radius": 300,
+      "citizens": 15,
+      "nameKey": "@city/city:rank3"
+    },
+    {
+      "rank": 4,
+      "radius": 400,
+      "citizens": 30,
+      "nameKey": "@city/city:rank4"
+    },
+    {
+      "rank": 5,
+      "radius": 450,
+      "citizens": 40,
+      "nameKey": "@city/city:rank5"
+    }
+  ],
+  "limits": [
+    {
+      "scene": "corellia",
+      "maxCities": 20,
+      "mediumCityLimit": 15,
+      "bigCityLimit": 10
+    },
+    {
+      "scene": "dantooine",
+      "maxCities": 50,
+      "mediumCityLimit": 30,
+      "bigCityLimit": 20
+    },
+    {
+      "scene": "lok",
+      "maxCities": 50,
+      "mediumCityLimit": 30,
+      "bigCityLimit": 20
+    },
+    {
+      "scene": "naboo",
+      "maxCities": 20,
+      "mediumCityLimit": 15,
+      "bigCityLimit": 10
+    },
+    {
+      "scene": "rori",
+      "maxCities": 50,
+      "mediumCityLimit": 30,
+      "bigCityLimit": 20
+    },
+    {
+      "scene": "talus",
+      "maxCities": 50,
+      "mediumCityLimit": 30,
+      "bigCityLimit": 20
+    },
+    {
+      "scene": "tatooine",
+      "maxCities": 20,
+      "mediumCityLimit": 15,
+      "bigCityLimit": 10
+    }
+  ]
+}
