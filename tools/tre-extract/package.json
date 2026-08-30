@@ -1,0 +1,10 @@
+{
+  "name": "@precu/tre-extract",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Asset pipeline: converts Star Wars Galaxies client data for the web tools",
+  "scripts": {
+    "lint": "node scripts/lint.mjs",
+    "test": "node scripts/test.mjs"
+  }
+}

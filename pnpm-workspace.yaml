@@ -1,6 +1,10 @@
 packages:
   - "apps/*"
   - "packages/*"
+  # The asset pipeline is Python, and is a workspace member only so its ruff
+  # check and its tests run from the same `pnpm lint` and `pnpm test` as
+  # everything else.
+  - "tools/*"
 
 onlyBuiltDependencies:
   - esbuild

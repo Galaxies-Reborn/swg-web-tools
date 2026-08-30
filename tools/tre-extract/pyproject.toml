@@ -1,0 +1,60 @@
+[project]
+name = "tre-extract"
+version = "0.1.0"
+description = "Convert Star Wars Galaxies TRE archives into glTF assets for the web"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+    "Pillow>=10.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+tre-extract = "tre_extract.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+# Pinned explicitly, because an unset `select` means the rule set is whatever
+# the installed ruff happens to default to -- and that moves between versions.
+# A pipeline check that changes its mind when someone upgrades a tool is worse
+# than no check.
+#
+# What is deliberately NOT here: BLE (blind except) and S (bandit). This code
+# parses binary game formats asset by asset, where a broad `except Exception:
+# continue` is the correct behaviour -- one malformed file out of twenty
+# thousand must not end a two-hour conversion -- and every such site says so in
+# a comment. A rule that fires on the right answer trains people to ignore it.
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # import sorting
+    "UP",   # pyupgrade
+    "B",    # bugbear
+    "C4",   # comprehensions
+    "RUF",  # ruff's own
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff.lint.per-file-ignores]
+# The terrain generator is a port. Its compact one-line style is the shape the
+# engine's own code has, and it was validated numerically against the game's
+# world -- median error exactly 0.000 m against real object placements. Pulling
+# 282 statements onto their own lines to satisfy a style rule risks changing a
+# number for no gain, so the layout stays and the rule is off for this file
+# alone. Everything else in the package is held to it.
+"src/tre_extract/formats/terrain.py" = ["E501", "E701", "E702", "E741"]

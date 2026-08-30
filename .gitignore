@@ -14,3 +14,12 @@ apps/web/public/assets/
 
 .DS_Store
 *.log
+
+# The asset pipeline is Python.
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
