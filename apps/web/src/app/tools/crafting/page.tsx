@@ -299,8 +299,20 @@ function CraftingView() {
                         ))}
                       </ul>
                     ) : slot.kind === 'resource' ? (
-                      <p className="mt-3 text-xs text-[var(--color-warn)]">
-                        Nothing of this class is spawned right now.
+                      // An empty match list means one of two opposite things.
+                      // With a galaxy behind it, nothing of this class is up.
+                      // Without one, nobody asked -- and saying "nothing is
+                      // spawned" there is simply false.
+                      <p
+                        className={`mt-3 text-xs ${
+                          slot.available === null
+                            ? 'text-[var(--color-ink-dim)]'
+                            : 'text-[var(--color-warn)]'
+                        }`}
+                      >
+                        {slot.available === null
+                          ? 'Which resources fill this needs a live galaxy.'
+                          : 'Nothing of this class is spawned right now.'}
                       </p>
                     ) : null}
                   </div>
