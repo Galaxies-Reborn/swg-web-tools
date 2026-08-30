@@ -227,7 +227,11 @@ function Ship({
       }
       return null;
     },
-    // Re-resolved whenever another model registers its points.
+    // `registry` is a ref, so nothing about reading it can invalidate this.
+    // mountedCount is the signal that its CONTENTS changed, which is exactly
+    // what should re-resolve a hardpoint lookup. The rule cannot see that,
+    // because the value is not read in the body.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [mountedCount],
   );
 
@@ -247,8 +251,11 @@ function Ship({
       }
       return null;
     },
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- registry is a ref;
-    // mountedCount is what says its contents changed.
+    // Same as findPoint above: mountedCount stands in for "the ref's contents
+    // changed". The disable has to be the LAST line before the array -- with a
+    // trailing comment line it suppresses that comment instead of the code,
+    // which is how this one was reported as unused while still erroring.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [hull, mountedCount],
   );
 
