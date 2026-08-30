@@ -25,6 +25,7 @@ import {
   maxCivicStructures,
   overlaps,
   placeableOn,
+  probePlacement,
   rankLocks,
   structureLabel,
   type CityStructure,
@@ -303,6 +304,22 @@ export default function CityPlannerPage() {
       // The reason travels with the placement. Re-deriving it in the panel let
       // the list of causes drift from the list of tests, and an over-cap
       // building was reported as overlapping something it did not touch.
+      // What the ground itself says. This is the game's own test -- the terrain
+      // under the footprint is accumulated into a box and the site refused when
+      // that box is taller than the structure tolerates -- and it also yields
+      // the height the building stands at. Both come from the one call, so a
+      // building cannot be drawn at a height it was not judged at.
+      const ground =
+        terrain && placement.structure.footprint
+          ? probePlacement(
+              placement.structure.footprint,
+              placement.x,
+              placement.z,
+              placement.rotation,
+              terrain,
+            )
+          : null;
+
       const reason = locked
         ? `Needs rank ${placement.structure.cityRank}.`
         : outside
@@ -311,11 +328,21 @@ export default function CityPlannerPage() {
             ? `Past the civic cap of ${civicCap} for rank ${rank}.`
             : collides
               ? 'Overlaps another structure.'
-              : null;
+              : ground && !ground.ok
+                ? ground.reason === 'water'
+                  ? 'Water under the footprint.'
+                  : `Ground varies ${ground.relief.toFixed(1)} m across this ` +
+                    `footprint; it will take ${ground.tolerance} m.`
+                : null;
 
-      return { ...placement, invalid: reason !== null, reason };
+      return {
+        ...placement,
+        invalid: reason !== null,
+        reason,
+        groundY: ground?.height ?? 0,
+      };
     });
-  }, [placements, radius, rank, civicCap]);
+  }, [placements, radius, rank, civicCap, terrain]);
 
   const problems = validated.filter((p) => p.invalid).length;
   const civicPlaced = placements.filter((p) => p.structure.civic).length;
@@ -566,7 +593,7 @@ export default function CityPlannerPage() {
         <Stat
           label="Problems"
           value={String(problems)}
-          hint={problems ? 'outside radius, overlapping, rank-locked, or past the civic cap' : 'everything fits'}
+          hint={problems ? 'outside radius, overlapping, rank-locked, past the civic cap, or ground the structure will not take' : 'everything fits'}
           tone={problems ? 'bad' : 'good'}
         />
       </section>

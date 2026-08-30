@@ -32,6 +32,13 @@ export interface PlacedStructure {
   rotation: number;
   /** Set when the placement breaks a rule, so the view can call it out. */
   invalid?: boolean;
+  /**
+   * Where the structure stands, from the same placement test that decided
+   * whether it may stand there at all. Computed once alongside the validation
+   * rather than again per frame, so the drawn height and the judged height
+   * cannot drift apart.
+   */
+  groundY?: number;
 }
 
 export interface CityCanvasProps {
@@ -118,7 +125,7 @@ export function CityCanvas({
             onDragMove={onDragMove}
           />
         )}
-        <BuildableArea radius={radius} />
+        <BuildableArea radius={radius} terrain={terrain} />
 
         {/* Over real terrain the flat grid would hang in the air across a
             valley, so it is dropped when there is ground to read instead. */}
@@ -140,7 +147,6 @@ export function CityCanvas({
           <Placement
             key={placement.id}
             placement={placement}
-            terrain={terrain}
             selected={placement.id === selectedId}
             onSelect={onSelect}
             onDragStart={(id) => {
@@ -201,7 +207,7 @@ function TerrainRelief({
 
   const geometry = useMemo(() => {
     const { samples, spacing, heights, flags } = tile.grid;
-    const half = ((samples - 1) * spacing) / 2;
+    const { originX, originZ } = tile.meta;
     const positions = new Float32Array(samples * samples * 3);
     const colours = new Float32Array(samples * samples * 3);
 
@@ -211,11 +217,13 @@ function TerrainRelief({
     for (let row = 0; row < samples; row += 1) {
       for (let col = 0; col < samples; col += 1) {
         const i = row * samples + col;
-        // The tile is centred on the plan's origin, so the mesh is drawn in the
-        // planner's own space and no placement has to be moved to meet it.
-        positions[i * 3] = -half + col * spacing;
+        // Drawn at the tile's own origin rather than by assuming it is centred
+        // on the plan. The cut is snapped to the planet's sample grid, so the
+        // window can sit up to a sample off the site, and assuming otherwise
+        // slides the ground out from under everything standing on it.
+        positions[i * 3] = originX + col * spacing;
         positions[i * 3 + 1] = heightAt(col, row);
-        positions[i * 3 + 2] = -half + row * spacing;
+        positions[i * 3 + 2] = originZ + row * spacing;
 
         // Steepness from the neighbouring samples, which is what the eye reads
         // as relief once the whole thing is one flat colour.
@@ -337,24 +345,44 @@ function Ground({
   );
 }
 
-/** The rank's buildable circle, plus a filled disc so the area reads at a glance. */
-function BuildableArea({ radius }: { radius: number }) {
+/**
+ * The rank's buildable circle.
+ *
+ * Over real ground the boundary is draped on the terrain rather than drawn
+ * flat. A flat ring on a slope is buried on the high side and hanging on the
+ * low one, which on a hilly site means the thing the whole plan is fitted
+ * inside is not visible at all.
+ *
+ * The filled disc goes with it for the same reason -- a flat disc through a
+ * hillside reads as neither ground nor boundary. It stays on flat ground,
+ * where it does help the area read at a glance.
+ */
+function BuildableArea({ radius, terrain }: { radius: number; terrain: TerrainTile | null }) {
   const ring = useMemo(() => {
     const points: THREE.Vector3[] = [];
     const segments = 256;
     for (let i = 0; i <= segments; i += 1) {
       const angle = (i / segments) * Math.PI * 2;
-      points.push(new THREE.Vector3(Math.cos(angle) * radius, 0, Math.sin(angle) * radius));
+      const x = Math.cos(angle) * radius;
+      const z = Math.sin(angle) * radius;
+      // Lifted clear of the surface so it is not z-fighting the ground it is
+      // drawn on; well under the height of anything it could hide.
+      const y = terrain ? terrain.heightAt(x, z) + 0.5 : 0;
+      points.push(new THREE.Vector3(x, y, z));
     }
     return new THREE.BufferGeometry().setFromPoints(points);
-  }, [radius]);
+  }, [radius, terrain]);
+
+  useEffect(() => () => ring.dispose(), [ring]);
 
   return (
     <group position={[0, 0.02, 0]}>
-      <mesh rotation={[-Math.PI / 2, 0, 0]}>
-        <circleGeometry args={[radius, 128]} />
-        <meshBasicMaterial color="#1f5f9e" transparent opacity={0.07} depthWrite={false} />
-      </mesh>
+      {terrain ? null : (
+        <mesh rotation={[-Math.PI / 2, 0, 0]}>
+          <circleGeometry args={[radius, 128]} />
+          <meshBasicMaterial color="#1f5f9e" transparent opacity={0.07} depthWrite={false} />
+        </mesh>
+      )}
       <primitive object={new THREE.Line(ring, new THREE.LineBasicMaterial({ color: '#4ea3ff' }))} />
     </group>
   );
@@ -362,13 +390,11 @@ function BuildableArea({ radius }: { radius: number }) {
 
 function Placement({
   placement,
-  terrain,
   selected,
   onSelect,
   onDragStart,
 }: {
   placement: PlacedStructure;
-  terrain: TerrainTile | null;
   selected: boolean;
   onSelect: (id: string) => void;
   onDragStart: (id: string) => void;
@@ -381,27 +407,17 @@ function Placement({
   /**
    * The height the building stands at.
    *
-   * The HIGHEST corner of the footprint, not the centre. The game levels a
-   * structure's pad rather than letting it follow the ground, and a building
-   * placed at its centre height has two corners buried on any slope -- which
-   * reads as the terrain being wrong rather than the site being steep.
+   * The TOP of the ground under its footprint, which is what
+   * LotManager::canPlace returns and what the game stands the building on. A
+   * player structure neither flattens the terrain nor follows it -- its
+   * template sets snapToTerrain = false -- so on a slope it stands level with
+   * its highest lot and overhangs the ground falling away beneath. That
+   * overhang is the game's real appearance.
+   *
+   * It arrives already computed, from the placement test in the planner. A
+   * fallback is kept for the flat grid, where there is no ground to read.
    */
-  const groundY = useMemo(() => {
-    if (!terrain) return 0;
-    const halfW = width / 2;
-    const halfD = depth / 2;
-    let highest = -Infinity;
-    for (const [cx, cz] of [
-      [x - halfW, z - halfD],
-      [x + halfW, z - halfD],
-      [x - halfW, z + halfD],
-      [x + halfW, z + halfD],
-      [x, z],
-    ]) {
-      highest = Math.max(highest, terrain.heightAt(cx, cz));
-    }
-    return highest;
-  }, [terrain, x, z, width, depth]);
+  const groundY = placement.groundY ?? 0;
 
   return (
     <group
