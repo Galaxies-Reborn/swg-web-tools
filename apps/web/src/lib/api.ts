@@ -1,11 +1,11 @@
 /**
  * Typed client for the API.
  *
- * These tools run with no server of their own. The only thing they ever asked a
- * backend for was somewhere to keep saved designs, so that one path is answered
- * from the browser instead -- see `designs.ts`. Everything else the tools need
- * is either static data compiled into `@precu/shared` or a model file fetched
- * from the asset tree.
+ * These tools run with no server of their own. Two paths that would have gone
+ * to a backend are answered from the browser instead: saved designs, kept in
+ * local storage (`designs.ts`), and crafting schematics, read from the shipped
+ * data (`schematics.ts`). Everything else the tools need is either static data
+ * compiled into `@precu/shared` or a model file fetched from the asset tree.
  *
  * The interception lives here rather than in the pages so the tools read the
  * same in this repo as they do in the full stack, where these requests really
@@ -25,9 +25,22 @@ export class ApiError extends Error {
   }
 }
 
+/** `/api/schematics` and `/api/schematics/<id>`, without loading the data. */
+function isSchematicPath(path: string): boolean {
+  const name = path.split('?')[0] ?? '';
+  return name === '/api/schematics' || name.startsWith('/api/schematics/');
+}
+
 export async function api<T>(path: string, init?: RequestInit): Promise<T> {
   // Saved designs are kept in this browser. Nothing here is sent anywhere.
   if (isDesignPath(path)) return handleDesignRequest<T>(path, init);
+  // Schematics are shipped data. The set is 2.8 MB, so the module holding it is
+  // imported here rather than at the top: that keeps it in its own chunk, which
+  // only loads for someone who actually opens the crafting tool.
+  if (isSchematicPath(path)) {
+    const { handleSchematicRequest } = await import('./schematics');
+    return handleSchematicRequest<T>(path);
+  }
 
   const response = await fetch(path.startsWith('/') ? path : `/api/${path}`, {
     credentials: 'include',

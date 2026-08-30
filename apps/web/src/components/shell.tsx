@@ -6,6 +6,7 @@ const NAV = [
   { href: '/tools/planet-map', label: 'Planet Map' },
   { href: '/tools/city-planner', label: 'City Planner' },
   { href: '/tools/ship-loadout', label: 'Ship Builder' },
+  { href: '/tools/crafting', label: 'Crafting' },
   { href: '/assets', label: 'Assets' },
 ];
 
