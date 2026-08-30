@@ -187,9 +187,8 @@ export default function PlanetMapPage() {
             <PlanetCanvasFallback message={status} />
           )}
           <p className="mt-2 text-xs text-[var(--color-ink-dim)]">
-            Click the surface to site the city. Drag to orbit, scroll to zoom. Relief is
-            exaggerated six times &mdash; a planet is 16 km across and rises only a few hundred
-            metres, so at true scale it reads as a flat sheet.
+            Click the surface to site the city. Drag to orbit, scroll to zoom. Relief is drawn at
+            true scale, so a slope you read here is the slope that is there.
           </p>
         </div>
 

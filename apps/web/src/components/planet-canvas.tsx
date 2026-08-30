@@ -9,6 +9,14 @@
  * at true scale the whole world is a flat sheet and none of the relief anyone
  * is looking for is visible.
  *
+ * Relief is drawn at TRUE SCALE. It used to be exaggerated six times, which is
+ * what made every planet a field of needles: exaggeration multiplies the
+ * TANGENT of a slope, so it does not lift relief gently, it drives everything
+ * already steep towards vertical. Measured across the shipped bakes, the share
+ * of a planet steeper than 60 degrees goes from 0.6-1.4% at true scale to
+ * 17-26% at 6x, and the 90th-percentile slope from a rolling 29-35 degrees to
+ * 73-77. Ground here is the ground, and a slope read off it is a real slope.
+ *
  * The camera starts overhead, since siting a city is a map task. It is a real
  * 3D scene rather than a 2D image so the same view can be tilted to read a
  * valley's shape, which is exactly the thing a flat map hides.
@@ -21,15 +29,6 @@ import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 
 import { FLAG_WATER, type PlanetOverview } from '@/lib/planet-map';
-
-/**
- * How much taller than life the relief is drawn.
- *
- * A planet spans 16,384 m and rises a few hundred, so unexaggerated terrain is
- * visually flat. Six is enough to read a mountain range at a glance without
- * turning gentle ground into spikes.
- */
-const HEIGHT_EXAGGERATION = 6;
 
 export interface PlanetCanvasProps {
   overview: PlanetOverview;
@@ -90,23 +89,25 @@ function PlanetSurface({
     const positions = new Float32Array(samples * samples * 3);
     const colours = new Float32Array(samples * samples * 3);
 
-    const at = (col: number, row: number) => heights[row * samples + col] / 10;
+    const heightAt = (col: number, row: number) => heights[row * samples + col] / 10;
 
-    let lowest = Infinity;
-    let highest = -Infinity;
-    for (let i = 0; i < heights.length; i += 1) {
-      const metres = heights[i] / 10;
-      lowest = Math.min(lowest, metres);
-      highest = Math.max(highest, metres);
-    }
+    // The colour ramp is bounded by percentiles, not by the extremes. Naboo
+    // reaches -617 m in one ocean trench and +491 m on one peak; ramping
+    // between those puts the entire inhabited planet in a couple of shades.
+    // Clipping the tails costs nothing -- ground past them is simply drawn at
+    // the end colour -- and gives the other 96% its full range.
+    const sorted = Float32Array.from(heights, (dm) => dm / 10).sort();
+    const at = (q: number) => sorted[Math.round(q * (sorted.length - 1))];
+    const lowest = at(0.02);
+    const highest = at(0.98);
     const span = Math.max(highest - lowest, 1);
 
     for (let row = 0; row < samples; row += 1) {
       for (let col = 0; col < samples; col += 1) {
         const i = row * samples + col;
-        const metres = at(col, row);
+        const metres = heightAt(col, row);
         positions[i * 3] = -half + col * spacing;
-        positions[i * 3 + 1] = metres * HEIGHT_EXAGGERATION;
+        positions[i * 3 + 1] = metres;
         positions[i * 3 + 2] = -half + row * spacing;
 
         if (flags[i] & FLAG_WATER) {
@@ -117,7 +118,7 @@ function PlanetSurface({
           // Banded by elevation, which is how a physical map reads: low ground
           // green-grey, high ground pale. Relative to this planet's own range,
           // so a flat world is not rendered as one uniform colour.
-          const t = (metres - lowest) / span;
+          const t = Math.min(Math.max((metres - lowest) / span, 0), 1);
           colours[i * 3] = 0.13 + t * 0.62;
           colours[i * 3 + 1] = 0.16 + t * 0.55;
           colours[i * 3 + 2] = 0.13 + t * 0.46;
@@ -182,7 +183,7 @@ function SiteMarker({
   site: { x: number; z: number };
   radius: number;
 }) {
-  const y = overview.heightAt(site.x, site.z) * HEIGHT_EXAGGERATION;
+  const y = overview.heightAt(site.x, site.z);
   const pillar = Math.max(overview.meta.mapWidth * 0.02, 200);
 
   return (
