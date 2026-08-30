@@ -32,6 +32,8 @@ import {
 } from '@precu/shared';
 
 import { loadSiteTerrain, type TerrainTile } from '@/lib/terrain';
+import { hitsBlocker, loadBlockers, type Blocker } from '@/lib/blockers';
+import { hitsProp, loadProps, type PlacedProp, type Prop } from '@/lib/props';
 
 import { Empty, PageHeader, Stat } from '@/components/shell';
 import { api, ApiError } from '@/lib/api';
@@ -71,6 +73,33 @@ const HISTORY_LIMIT = 50;
  * line, so snapping the centre leaves every such building straddling the grid
  * it is drawn over.
  */
+/**
+ * Half a footprint's extent along each world axis, with rotation applied.
+ *
+ * A quarter turn swaps width and depth. The planner only ever produces quarter
+ * turns, so this is exact rather than an approximation.
+ */
+function halfWidth(structure: CityStructure, rotation: number): number {
+  const quarter = Math.abs(Math.round(rotation / (Math.PI / 2)) % 2) === 1;
+  const footprint = structure.footprint;
+  return ((quarter ? footprint?.depthMetres : footprint?.widthMetres) ?? 8) / 2;
+}
+
+function halfDepth(structure: CityStructure, rotation: number): number {
+  const quarter = Math.abs(Math.round(rotation / (Math.PI / 2)) % 2) === 1;
+  const footprint = structure.footprint;
+  return ((quarter ? footprint?.widthMetres : footprint?.depthMetres) ?? 8) / 2;
+}
+
+/** A readable name for something in the world, from its template path. */
+function blockerLabel(blocker: Blocker): string {
+  const stem = (blocker.model || 'something').split('/').pop() ?? 'something';
+  return stem
+    .replace(/^(shared_|ply_|mun_|poi_|ins_)/, '')
+    .replace(/_r\d+.*$/, '')
+    .replace(/_/g, ' ');
+}
+
 function snapToLots(
   structure: CityStructure,
   x: number,
@@ -105,6 +134,12 @@ export default function CityPlannerPage() {
   const [anchor, setAnchor] = useState<{ x: number; z: number } | null>(null);
   const [waypoint, setWaypoint] = useState('');
   const [terrain, setTerrain] = useState<TerrainTile | null>(null);
+  /** What is already standing on this site, from the world snapshot. */
+  const [blockers, setBlockers] = useState<Blocker[]>([]);
+  /** The decoration catalogue, and what has been put down from it. */
+  const [propCatalogue, setPropCatalogue] = useState<Prop[]>([]);
+  const [placedProps, setPlacedProps] = useState<PlacedProp[]>([]);
+  const [pendingProp, setPendingProp] = useState<Prop | null>(null);
   const [terrainNote, setTerrainNote] = useState<string | null>(null);
   const [placements, setPlacements] = useState<PlacedStructure[]>([]);
   // Undo history. A plan is fiddly to rebuild, and the two operations most
@@ -131,6 +166,31 @@ export default function CityPlannerPage() {
     },
     [placements],
   );
+
+  useEffect(() => {
+    void loadProps().then(setPropCatalogue);
+  }, []);
+
+  // The static world around this site. Fetched per planet and narrowed to the
+  // city's own reach, so the canvas and the validity check both work in the
+  // plan's space rather than the planet's.
+  useEffect(() => {
+    if (!anchor) {
+      setBlockers([]);
+      return;
+    }
+    let cancelled = false;
+    void loadBlockers(scene).then((set) => {
+      if (cancelled || !set) {
+        if (!cancelled) setBlockers([]);
+        return;
+      }
+      setBlockers(set.near(anchor.x, anchor.z, cityRadius(rank) + 100));
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [anchor, scene, rank]);
 
   // Arrive from the Planet Map with a site already chosen. Read once on mount:
   // after that the waypoint box and the map are the two ways to move, and
@@ -304,6 +364,30 @@ export default function CityPlannerPage() {
       // The reason travels with the placement. Re-deriving it in the panel let
       // the list of causes drift from the list of tests, and an over-cap
       // building was reported as overlapping something it did not touch.
+      // Only worth asking once the placement is otherwise legal, and only
+      // when the plan is sited -- an unsited plan has no world to collide with.
+      const blocked =
+        blockers.length > 0
+          ? hitsBlocker(
+              placement.x,
+              placement.z,
+              halfWidth(placement.structure, placement.rotation),
+              halfDepth(placement.structure, placement.rotation),
+              blockers,
+            )
+          : null;
+
+      const onProp =
+        placedProps.length > 0
+          ? hitsProp(
+              placement.x,
+              placement.z,
+              halfWidth(placement.structure, placement.rotation),
+              halfDepth(placement.structure, placement.rotation),
+              placedProps,
+            )
+          : null;
+
       // What the ground itself says. This is the game's own test -- the terrain
       // under the footprint is accumulated into a box and the site refused when
       // that box is taller than the structure tolerates -- and it also yields
@@ -328,12 +412,16 @@ export default function CityPlannerPage() {
             ? `Past the civic cap of ${civicCap} for rank ${rank}.`
             : collides
               ? 'Overlaps another structure.'
-              : ground && !ground.ok
-                ? ground.reason === 'water'
-                  ? 'Water under the footprint.'
-                  : `Ground varies ${ground.relief.toFixed(1)} m across this ` +
-                    `footprint; it will take ${ground.tolerance} m.`
-                : null;
+              : blocked
+                ? `Blocked by ${blockerLabel(blocked)} already on this ground.`
+                : onProp
+                  ? `Sitting on the ${onProp.prop.name} placed here.`
+                  : ground && !ground.ok
+                    ? ground.reason === 'water'
+                      ? 'Water under the footprint.'
+                      : `Ground varies ${ground.relief.toFixed(1)} m across this ` +
+                        `footprint; it will take ${ground.tolerance} m.`
+                    : null;
 
       return {
         ...placement,
@@ -342,7 +430,7 @@ export default function CityPlannerPage() {
         groundY: ground?.height ?? 0,
       };
     });
-  }, [placements, radius, rank, civicCap, terrain]);
+  }, [placements, radius, rank, civicCap, blockers, placedProps, terrain]);
 
   const problems = validated.filter((p) => p.invalid).length;
   const civicPlaced = placements.filter((p) => p.structure.civic).length;
@@ -364,8 +452,25 @@ export default function CityPlannerPage() {
 
   const place = useCallback(
     (x: number, z: number) => {
+      // A prop is placed freely rather than snapped: decorations sit between
+      // lots as often as on them, and forcing them to the 8 m grid would make
+      // most of the catalogue unusable.
+      if (pendingProp) {
+        setPlacedProps((current) => [
+          ...current,
+          {
+            id: makeId(),
+            prop: pendingProp,
+            x: Math.round(x * 10) / 10,
+            z: Math.round(z * 10) / 10,
+            rotation: 0,
+          },
+        ]);
+        setNotice(null);
+        return;
+      }
       if (!pending) {
-        setNotice('Pick a structure from the palette first.');
+        setNotice('Pick a structure or a decoration from the palette first.');
         return;
       }
       const [snapX, snapZ] = snapToLots(pending, x, z);
@@ -375,7 +480,10 @@ export default function CityPlannerPage() {
       ]);
       setNotice(null);
     },
-    [pending, placements, commit],
+    // pendingProp belongs here: without it this closes over the value from the
+    // render where a prop had not been picked yet, so the prop branch above is
+    // permanently unreachable and clicking the ground silently does nothing.
+    [pending, pendingProp, placements, commit],
   );
 
   const selected = validated.find((p) => p.id === selectedId) ?? null;
@@ -468,6 +576,16 @@ export default function CityPlannerPage() {
         rotation: p.rotation,
         label: structureLabel(p.structure),
       })),
+      // Decorations are part of a plan. Leaving them out meant a plan came back
+      // from a save with its buildings and none of what was arranged around
+      // them, silently.
+      decorations: placedProps.map((p) => ({
+        id: p.id,
+        template: p.prop.template,
+        x: p.x,
+        z: p.z,
+        rotation: p.rotation,
+      })),
     };
   }
 
@@ -506,11 +624,34 @@ export default function CityPlannerPage() {
       });
     }
     setPlacements(restored);
+
+    // Decorations, resolved against the catalogue the same way structures are
+    // resolved against the table. A prop whose template is unknown -- an older
+    // export, a renamed asset -- is dropped rather than restored as a nameless
+    // box with a made-up size.
+    const byProp = new Map(propCatalogue.map((prop) => [prop.template, prop]));
+    const decorations = Array.isArray(plan.decorations) ? plan.decorations : [];
+    const restoredProps: PlacedProp[] = [];
+    for (const entry of decorations) {
+      const prop = byProp.get(entry.template);
+      if (!prop) continue;
+      restoredProps.push({
+        id: makeId(),
+        prop,
+        x: Number(entry.x) || 0,
+        z: Number(entry.z) || 0,
+        rotation: Number(entry.rotation) || 0,
+      });
+    }
+    setPlacedProps(restoredProps);
     setSelectedId(null);
     setNotice(
       dropped > 0 ? `Loaded, but ${dropped} placement(s) referenced unknown structures.` : null,
     );
-  }, []);
+    // propCatalogue belongs here: without it this closes over the empty
+    // catalogue from first render and every restored decoration is dropped
+    // as unknown -- a plan that loads looking like it was saved without any.
+  }, [propCatalogue]);
 
   /** Listings carry no payload, so opening one fetches the document. */
   async function openSaved(id: string, name: string) {
@@ -584,6 +725,15 @@ export default function CityPlannerPage() {
           hint={`${civicPalette.length} civic · ${housingPalette.length} houses here`}
         />
         <Stat
+          label="Decorations"
+          value={String(placedProps.length)}
+          hint={
+            placedProps.length
+              ? `${placedProps.filter((p) => p.prop.collides).length} take up room`
+              : `${propCatalogue.length} available`
+          }
+        />
+        <Stat
           label="Civic buildings"
           value={`${civicPlaced} / ${civicCap}`}
           hint="cap is 1 + rank x 9"
@@ -610,6 +760,8 @@ export default function CityPlannerPage() {
             onDragMove={dragTo}
             onDragEnd={endDrag}
             terrain={terrain}
+            blockers={blockers}
+            props={placedProps}
           />
           <div className="mt-2 flex gap-2">
             <button
@@ -714,15 +866,33 @@ export default function CityPlannerPage() {
                 title="Civic"
                 structures={civicPalette}
                 pending={pending}
-                onPick={setPending}
+                onPick={(structure) => {
+                  // Clear the other kind of pending pick, or a ground click is
+                  // ambiguous -- and the prop branch runs first, so choosing a
+                  // building would silently drop another decoration instead.
+                  setPendingProp(null);
+                  setPending(structure);
+                }}
                 rank={rank}
               />
               <StructureGroup
                 title="Player houses"
                 structures={housingPalette}
                 pending={pending}
-                onPick={setPending}
+                onPick={(structure) => {
+                  setPendingProp(null);
+                  setPending(structure);
+                }}
                 rank={rank}
+              />
+              <PropGroup
+                catalogue={propCatalogue}
+                pending={pendingProp}
+                onPick={(prop) => {
+                  // One pending thing at a time, or a ground click is ambiguous.
+                  setPending(null);
+                  setPendingProp(prop);
+                }}
               />
             </div>
           </div>
@@ -782,6 +952,12 @@ export default function CityPlannerPage() {
                 className="btn text-xs"
                 onClick={() => {
                   commit([]);
+                  // Decorations are part of the plan too. Clearing only the
+                  // structures left them standing on an otherwise empty site,
+                  // still blocking placements, with nothing on screen to
+                  // explain why.
+                  setPlacedProps([]);
+                  setPendingProp(null);
                   setCurrentId(null);
                   setSelectedId(null);
                 }}
@@ -850,6 +1026,93 @@ export default function CityPlannerPage() {
  * city and counts against its civic cap, the other is paid for by a player and
  * costs them lots — so they are not worth mixing into one flat list.
  */
+/**
+ * The decoration catalogue.
+ *
+ * Six hundred props is too many to scroll, so it is grouped by family and
+ * filtered by typing. Each row shows the room the prop takes and, where the
+ * volume is only its render bounds rather than a real collision extent, says
+ * so -- the numbers are not equally trustworthy and the list should not
+ * pretend otherwise.
+ */
+function PropGroup({
+  catalogue,
+  pending,
+  onPick,
+}: {
+  catalogue: Prop[];
+  pending: Prop | null;
+  onPick: (prop: Prop) => void;
+}) {
+  const [query, setQuery] = useState('');
+
+  const shown = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    const matched = needle
+      ? catalogue.filter((prop) => prop.name.toLowerCase().includes(needle))
+      : catalogue;
+    // Capped because a list this long is slower to render than it is useful.
+    // The count says what was left out rather than silently truncating.
+    return { rows: matched.slice(0, 60), total: matched.length };
+  }, [catalogue, query]);
+
+  if (catalogue.length === 0) {
+    return (
+      <div>
+        <p className="label mb-1">Decorations</p>
+        <p className="px-2 text-xs text-[var(--color-ink-dim)]">
+          None exported. Run <code>tre-extract props</code>.
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <p className="label mb-1">
+        Decorations{' '}
+        <span className="text-[var(--color-ink-dim)]">({catalogue.length})</span>
+      </p>
+      <input
+        className="input mb-1 w-full text-xs"
+        placeholder="Search decorations"
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
+      />
+      <div className="space-y-1">
+        {shown.rows.map((prop) => (
+          <button
+            key={prop.template}
+            type="button"
+            onClick={() => onPick(prop)}
+            className={`table-row flex w-full items-baseline justify-between gap-2 rounded px-2 py-1 text-left text-xs ${
+              pending?.template === prop.template
+                ? 'border border-[var(--color-accent)] text-[var(--color-accent)]'
+                : 'border border-transparent'
+            }`}
+            title={
+              prop.shape === 'bounds'
+                ? 'Size is the visual bounds; this object has no collision extent of its own'
+                : `Collision extent (${prop.shape})`
+            }
+          >
+            <span>{prop.name}</span>
+            <span className="shrink-0 text-[var(--color-ink-dim)]">
+              {(prop.halfX * 2).toFixed(1)}×{(prop.halfZ * 2).toFixed(1)}m
+              {prop.collides ? '' : ' · no collision'}
+            </span>
+          </button>
+        ))}
+      </div>
+      {shown.total > shown.rows.length ? (
+        <p className="mt-1 px-2 text-xs text-[var(--color-ink-dim)]">
+          {shown.total - shown.rows.length} more &mdash; narrow the search.
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
 function StructureGroup({
   title,
   structures,

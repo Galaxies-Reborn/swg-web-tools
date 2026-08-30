@@ -21,6 +21,8 @@ import * as THREE from 'three';
 import type { CityStructure } from '@precu/shared';
 
 import { FLAG_WATER, type TerrainTile } from '@/lib/terrain';
+import type { Blocker } from '@/lib/blockers';
+import { propExtent, type PlacedProp } from '@/lib/props';
 
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? '/assets';
 
@@ -64,6 +66,15 @@ export interface CityCanvasProps {
    * plane, which is still a usable way to lay out lots.
    */
   terrain?: TerrainTile | null;
+  /**
+   * What is already standing here, in the plan's own space.
+   *
+   * Drawn so a site reads honestly: an empty grid over ground that already has
+   * a moisture farm on it is a worse answer than no ground at all.
+   */
+  blockers?: Blocker[];
+  /** Decorations the player has put down, drawn at their collision volume. */
+  props?: PlacedProp[];
   className?: string;
 }
 
@@ -77,6 +88,8 @@ export function CityCanvas({
   onDragMove,
   onDragEnd,
   terrain = null,
+  blockers = [],
+  props = [],
   className,
 }: CityCanvasProps) {
   const [draggingId, setDraggingId] = useState<string | null>(null);
@@ -126,6 +139,8 @@ export function CityCanvas({
           />
         )}
         <BuildableArea radius={radius} terrain={terrain} />
+        <WorldBlockers blockers={blockers} terrain={terrain} />
+        <PlacedProps props={props} terrain={terrain} />
 
         {/* Over real terrain the flat grid would hang in the air across a
             valley, so it is dropped when there is ground to read instead. */}
@@ -342,6 +357,89 @@ function Ground({
       <planeGeometry args={[size, size]} />
       <meshStandardMaterial color="#0b0f14" roughness={1} />
     </mesh>
+  );
+}
+
+/**
+ * The world that is already here.
+ *
+ * Drawn as plain boxes at their real footprint, in a colour that reads as
+ * "not yours" rather than as another placement. They are deliberately not
+ * models: a few thousand GLBs would be a different tool, and for siting a city
+ * the shape and the extent are the whole question.
+ */
+function WorldBlockers({
+  blockers,
+  terrain,
+}: {
+  blockers: Blocker[];
+  terrain: TerrainTile | null;
+}) {
+  if (blockers.length === 0) return null;
+  return (
+    <group>
+      {blockers.map((blocker, index) => {
+        const y = terrain ? terrain.heightAt(blocker.x, blocker.z) : 0;
+        // Capped for drawing only. A few of these are hundreds of metres tall
+        // -- a cliff mesh, a skydome remnant -- and at true height one object
+        // fills the view and hides the site being planned.
+        const height = Math.min(blocker.height, 24);
+        return (
+          <mesh
+            key={`${blocker.model}:${index}`}
+            position={[blocker.x, y + height / 2, blocker.z]}
+            rotation={[0, blocker.yaw, 0]}
+          >
+            <boxGeometry args={[blocker.halfX * 2, height, blocker.halfZ * 2]} />
+            <meshStandardMaterial color="#3a3f4a" roughness={0.95} transparent opacity={0.85} />
+          </mesh>
+        );
+      })}
+    </group>
+  );
+}
+
+/**
+ * Decorations the player has put down.
+ *
+ * Drawn at their COLLISION volume rather than their model, which is the honest
+ * thing to show in a planner: the question being asked is how much room each
+ * takes, and for most props that volume is larger than the object looks.
+ *
+ * Ornaments -- anything too small to obstruct -- are drawn flatter and paler,
+ * so a plan reads at a glance as "these take room, those do not".
+ */
+function PlacedProps({
+  props,
+  terrain,
+}: {
+  props: PlacedProp[];
+  terrain: TerrainTile | null;
+}) {
+  if (props.length === 0) return null;
+  return (
+    <group>
+      {props.map((placed) => {
+        const extent = propExtent(placed);
+        const y = terrain ? terrain.heightAt(placed.x, placed.z) : 0;
+        const height = Math.max(placed.prop.height, 0.2);
+        return (
+          <mesh
+            key={placed.id}
+            position={[placed.x, y + height / 2, placed.z]}
+            rotation={[0, placed.rotation, 0]}
+          >
+            <boxGeometry args={[extent.halfX * 2, height, extent.halfZ * 2]} />
+            <meshStandardMaterial
+              color={placed.prop.collides ? '#5d7c94' : '#3f4a52'}
+              roughness={0.85}
+              transparent
+              opacity={placed.prop.collides ? 0.9 : 0.5}
+            />
+          </mesh>
+        );
+      })}
+    </group>
   );
 }
 
