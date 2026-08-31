@@ -128,7 +128,7 @@ export default function PlanetMapPage() {
     const numbers = text.match(/-?\d+(?:\.\d+)?/g);
     if (!numbers || numbers.length < 2) return;
     const named = text.match(
-      /\b(tatooine|naboo|corellia|rori|talus|dantooine|dathomir|endor|lok|yavin4|taanab|mustafar|kashyyyk)\b/i,
+      /\b(tatooine|naboo|corellia|rori|talus|dantooine|dathomir|endor|lok|yavin4|taanab|mustafar|kashyyyk|hoth)\b/i,
     );
     if (named) setPlanet(named[1].toLowerCase());
     const [x, z] =

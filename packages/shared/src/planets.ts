@@ -61,6 +61,10 @@ export const PLANETS: readonly Planet[] = [
   // zone inside it, and is the one the travel table sends players to.
   ground('taanab', 'Taanab', { era: 'expansion', playerHousing: false }),
   ground('kashyyyk', 'Kashyyyk', { width: 8192, era: 'expansion', playerHousing: false }),
+  // Added content rather than restored content: the Pre-CU client carries
+  // Hoth's props and a planet-select icon and nothing to stand on. Recorded
+  // here so the tools can name the scene rather than printing a raw id.
+  ground('hoth', 'Hoth', { era: 'instance', playerHousing: false }),
 ] as const;
 
 const byId = new Map(PLANETS.map((p) => [p.id, p]));

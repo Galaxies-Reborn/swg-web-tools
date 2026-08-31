@@ -154,4 +154,10 @@ export const MAPPABLE_PLANETS = [
   'taanab',
   'mustafar',
   'kashyyyk',
+  // Added content rather than restored content: the Pre-CU client ships Hoth's
+  // props and its ice caves and generates no ground for it at all. The terrain
+  // here validates as a real 16 km world -- the height generator reproduces it
+  // with a median error of 0.000 m against the objects in its own snapshot --
+  // but it is hand-authored, and parts of it are plainly unfinished.
+  'hoth',
 ] as const;
