@@ -24,7 +24,7 @@ import * as THREE from 'three';
 import type { PaintPattern } from '@precu/shared';
 import { patternForModel } from '@precu/shared';
 
-import { transformWithinModel } from '../lib/hardpoints';
+import { findHardpoint, ownerOfHardpoint, transformWithinModel } from '../lib/hardpoints';
 
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? '/assets';
 
@@ -213,26 +213,36 @@ function Ship({
     setMountedCount((n) => n + 1);
   }, []);
 
+  /**
+   * The models THIS ship is made of.
+   *
+   * The registry is a ref, so it keeps every model mounted since the page
+   * loaded -- including the wings of a chassis looked at earlier. Hardpoint
+   * names are not unique between ships: `engine1`, `booster1` and `weapon1`
+   * appear on most of them. So a lookup that searched the whole registry could
+   * answer with another ship's wing, and did.
+   *
+   * Scoping every lookup to the current ship is what makes the answer belong
+   * to the ship being drawn. Clearing the registry instead would race: a
+   * child's registration effect runs before its parent's, so the hull would
+   * wipe the structural models that had just registered.
+   */
+  const shipModels = useMemo(() => {
+    const set = new Set<string>([hull]);
+    for (const part of structural ?? []) set.add(part.model);
+    return set;
+  }, [hull, structural]);
+
   /** Look a hardpoint up anywhere on the ship, preferring a named owner. */
   const findPoint = useCallback(
-    (name: string, owner?: string | null) => {
-      const key = name.toLowerCase();
-      if (owner) {
-        const hit = registry.current.get(owner)?.get(key);
-        if (hit) return hit;
-      }
-      for (const points of registry.current.values()) {
-        const hit = points.get(key);
-        if (hit) return hit;
-      }
-      return null;
-    },
+    (name: string, owner?: string | null) =>
+      findHardpoint(registry.current, shipModels, name, owner),
     // `registry` is a ref, so nothing about reading it can invalidate this.
     // mountedCount is the signal that its CONTENTS changed, which is exactly
     // what should re-resolve a hardpoint lookup. The rule cannot see that,
     // because the value is not read in the body.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [mountedCount],
+    [mountedCount, shipModels],
   );
 
   /**
@@ -243,20 +253,14 @@ function Ship({
    * away from underneath it when the S-foils open.
    */
   const ownerOf = useCallback(
-    (hardpoint: string): string | null => {
-      const key = hardpoint.toLowerCase();
-      for (const [model, points] of registry.current) {
-        if (model === hull) continue;
-        if (points.has(key)) return model;
-      }
-      return null;
-    },
+    (hardpoint: string): string | null =>
+      ownerOfHardpoint(registry.current, shipModels, hull, hardpoint),
     // Same as findPoint above: mountedCount stands in for "the ref's contents
     // changed". The disable has to be the LAST line before the array -- with a
     // trailing comment line it suppresses that comment instead of the code,
     // which is how this one was reported as unused while still erroring.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [hull, mountedCount],
+    [hull, mountedCount, shipModels],
   );
 
   const hardpoints = hullPoints;

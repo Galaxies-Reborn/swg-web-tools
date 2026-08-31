@@ -28,3 +28,77 @@ export function transformWithinModel(
   }
   return matrix;
 }
+
+// ---------------------------------------------------------------------------
+// Resolving a hardpoint to the model that carries it.
+//
+// The canvas keeps every model it has mounted in one registry, which outlives a
+// change of chassis: it is a ref, so looking at one ship and then another
+// leaves the first ship's wings in it. Hardpoint names are not unique between
+// ships -- `engine1`, `booster1` and `weapon1` are on most of them -- so a
+// lookup across the whole registry can answer with a model belonging to a ship
+// that is no longer on screen.
+//
+// That is not a cosmetic mistake. The canvas draws a part inside its owning
+// structural model, or against the hull when nothing else owns its hardpoint.
+// An owner from another chassis matches neither, so the part is dropped by both
+// and never drawn at all -- which is exactly how engines, boosters and weapons
+// went missing on hutt ships after a blacksun ship had been looked at.
+//
+// Both lookups therefore take the set of models the CURRENT ship is made of,
+// and ignore everything else in the registry.
+// ---------------------------------------------------------------------------
+
+/** What a model contributes: its hardpoints, by lowercased name. */
+export type HardpointRegistry<T> = Iterable<readonly [string, ReadonlyMap<string, T>]>;
+
+/**
+ * Which of this ship's models carries a hardpoint, or null when the hull does.
+ *
+ * Null is meaningful: it is what tells the canvas to draw the part against the
+ * hull rather than inside a structural model.
+ */
+export function ownerOfHardpoint<T>(
+  registry: HardpointRegistry<T>,
+  shipModels: ReadonlySet<string>,
+  hull: string,
+  hardpoint: string,
+): string | null {
+  const key = hardpoint.toLowerCase();
+  for (const [model, points] of registry) {
+    if (model === hull) continue;
+    if (!shipModels.has(model)) continue;
+    if (points.has(key)) return model;
+  }
+  return null;
+}
+
+/**
+ * A hardpoint anywhere on this ship, preferring one model's own copy.
+ *
+ * `preferred` matters where the same name appears on more than one of a ship's
+ * models -- an X-wing has `contrail1` on both wings -- and the part belongs to
+ * the one it is being drawn inside.
+ */
+export function findHardpoint<T>(
+  registry: HardpointRegistry<T>,
+  shipModels: ReadonlySet<string>,
+  hardpoint: string,
+  preferred?: string | null,
+): T | null {
+  const key = hardpoint.toLowerCase();
+  const entries = [...registry];
+  if (preferred) {
+    for (const [model, points] of entries) {
+      if (model !== preferred) continue;
+      const hit = points.get(key);
+      if (hit !== undefined) return hit;
+    }
+  }
+  for (const [model, points] of entries) {
+    if (!shipModels.has(model)) continue;
+    const hit = points.get(key);
+    if (hit !== undefined) return hit;
+  }
+  return null;
+}

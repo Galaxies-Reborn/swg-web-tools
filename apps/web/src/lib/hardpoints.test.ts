@@ -3,7 +3,7 @@ import test from 'node:test';
 
 import * as THREE from 'three';
 
-import { transformWithinModel } from './hardpoints.js';
+import { findHardpoint, ownerOfHardpoint, transformWithinModel } from './hardpoints.js';
 
 /**
  * Rebuild what ShipModel draws: a hull, a wing mounted on it that rolls when
@@ -100,5 +100,140 @@ test('reading the mount in world space instead would double-count the roll', () 
   assert.ok(
     got.distanceTo(world) > 0.5,
     'expected the doubled roll to visibly displace the part',
+  );
+});
+
+// ---------------------------------------------------------------------------
+// Resolving a hardpoint to the model that carries it.
+//
+// The registry outlives a change of chassis, and hardpoint names repeat across
+// ships. These pin the scoping that keeps one ship's answer out of another's.
+// ---------------------------------------------------------------------------
+
+function reg(entries: Record<string, string[]>): [string, Map<string, string>][] {
+  return Object.entries(entries).map(([model, names]) => [
+    model,
+    new Map(names.map((n) => [n.toLowerCase(), `${model}:${n}`])),
+  ]);
+}
+
+/**
+ * A hutt ship, whose engine/weapon/booster hardpoints are all on its hull,
+ * with a blacksun ship still in the registry from a moment ago. Blacksun's
+ * structural model carries hardpoints of the SAME names.
+ */
+const AFTER_LOOKING_AT_BLACKSUN = reg({
+  black_sun_fighter_light_body_s01: ['booster1', 'wing1'],
+  black_sun_fighter_light_struct_s01: ['engine1', 'weapon1'],
+  hutt_fighter_light_body_s01: ['booster1', 'engine1', 'weapon1', 'struct1'],
+  hutt_fighter_light_struct_s01: ['contrail1', 'contrail2'],
+});
+
+const HUTT_MODELS = new Set(['hutt_fighter_light_body_s01', 'hutt_fighter_light_struct_s01']);
+const HUTT_HULL = 'hutt_fighter_light_body_s01';
+
+test('a hardpoint on the hull is owned by nobody, so the part hangs on the hull', () => {
+  // This is the whole bug. Unscoped, `engine1` resolves to blacksun's wing --
+  // which is neither null nor one of this ship's structural models, so the
+  // canvas drops the part from BOTH render paths and draws nothing at all.
+  for (const name of ['engine1', 'weapon1', 'booster1']) {
+    assert.equal(
+      ownerOfHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, HUTT_HULL, name),
+      null,
+      `${name} is on this hull, so nothing else may claim it`,
+    );
+  }
+});
+
+test('a hardpoint really on a structural model is owned by it', () => {
+  assert.equal(
+    ownerOfHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, HUTT_HULL, 'contrail1'),
+    'hutt_fighter_light_struct_s01',
+  );
+});
+
+test('the same lookup for the blacksun ship answers with blacksun models', () => {
+  const models = new Set([
+    'black_sun_fighter_light_body_s01',
+    'black_sun_fighter_light_struct_s01',
+  ]);
+  const hull = 'black_sun_fighter_light_body_s01';
+  assert.equal(
+    ownerOfHardpoint(AFTER_LOOKING_AT_BLACKSUN, models, hull, 'engine1'),
+    'black_sun_fighter_light_struct_s01',
+  );
+  // On its own hull, so unowned -- and it must not be attributed to hutt's hull.
+  assert.equal(ownerOfHardpoint(AFTER_LOOKING_AT_BLACKSUN, models, hull, 'booster1'), null);
+});
+
+test('a hardpoint no model on this ship has is unowned rather than borrowed', () => {
+  assert.equal(
+    ownerOfHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, HUTT_HULL, 'wing1'),
+    null,
+    'wing1 belongs to a blacksun hull and must not be claimed here',
+  );
+});
+
+test('finding a hardpoint never returns another ship s node', () => {
+  // Unscoped this returns blacksun's engine1, and the part is drawn at the
+  // wrong place on the wrong ship.
+  assert.equal(
+    findHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, 'engine1'),
+    'hutt_fighter_light_body_s01:engine1',
+  );
+  assert.equal(
+    findHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, 'weapon1'),
+    'hutt_fighter_light_body_s01:weapon1',
+  );
+});
+
+test('a preferred model wins where a name appears on more than one', () => {
+  // An X-wing carries contrail1 on both wings; a part drawn inside one wing
+  // belongs to that wing's copy.
+  const xwing = reg({
+    xwing_body: ['wing1'],
+    xwing_wing_pos: ['contrail1', 'engine_pos1'],
+    xwing_wing_neg: ['contrail1', 'engine_neg1'],
+  });
+  const models = new Set(['xwing_body', 'xwing_wing_pos', 'xwing_wing_neg']);
+  assert.equal(
+    findHardpoint(xwing, models, 'contrail1', 'xwing_wing_neg'),
+    'xwing_wing_neg:contrail1',
+  );
+  assert.equal(
+    findHardpoint(xwing, models, 'contrail1', 'xwing_wing_pos'),
+    'xwing_wing_pos:contrail1',
+  );
+});
+
+test('a preferred model that is not on this ship does not smuggle one in', () => {
+  assert.equal(
+    findHardpoint(
+      AFTER_LOOKING_AT_BLACKSUN,
+      HUTT_MODELS,
+      'engine1',
+      'black_sun_fighter_light_struct_s01',
+    ),
+    'black_sun_fighter_light_struct_s01:engine1',
+    'an explicitly named owner is honoured -- the canvas only ever names one of this ship s own models',
+  );
+});
+
+test('an unknown hardpoint is null rather than a guess', () => {
+  assert.equal(findHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, 'nosuchpoint'), null);
+  assert.equal(
+    ownerOfHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, HUTT_HULL, 'nosuchpoint'),
+    null,
+  );
+});
+
+test('lookups do not care about case', () => {
+  assert.equal(
+    findHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, 'ENGINE1'),
+    'hutt_fighter_light_body_s01:engine1',
+  );
+  assert.equal(
+    ownerOfHardpoint(AFTER_LOOKING_AT_BLACKSUN, HUTT_MODELS, HUTT_HULL, 'Contrail1'),
+    'hutt_fighter_light_struct_s01',
   );
 });
