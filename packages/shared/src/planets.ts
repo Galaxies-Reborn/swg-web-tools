@@ -5,6 +5,12 @@
  * message. Widths come from dsrc datatables/travel/planet_width.tab — every
  * Pre-CU ground planet is 16384 units across, centred on the origin, so world
  * coordinates run -8192..8192 on both X and Z.
+ *
+ * A width here is the PLAYABLE extent, which is not always the extent of the
+ * generated ground. Mustafar is the case that shows it: the travel table gives
+ * 8,000 while its .trn generates terrain across the full 16,384. Both are
+ * right for their own purpose, so anything drawing terrain should take its
+ * size from the bake rather than from here.
  */
 
 export type PlanetEra = 'precu' | 'expansion' | 'space' | 'instance';
@@ -46,6 +52,15 @@ export const PLANETS: readonly Planet[] = [
   ground('tutorial', 'Tutorial', { playerHousing: false }),
   ground('kashyyyk_main', 'Kashyyyk', { width: 4096, era: 'expansion' }),
   ground('mustafar', 'Mustafar', { width: 8000, era: 'expansion' }),
+  // Scenes the client generates terrain for that planet_width.tab does not
+  // list, so their widths are the ones their own .trn declares. Neither takes
+  // player structures, and neither is Pre-CU, so both stay out of
+  // HOUSING_PLANETS by era.
+  //
+  // `kashyyyk` is the 8 km world; `kashyyyk_main` above is the 4 km village
+  // zone inside it, and is the one the travel table sends players to.
+  ground('taanab', 'Taanab', { era: 'expansion', playerHousing: false }),
+  ground('kashyyyk', 'Kashyyyk', { width: 8192, era: 'expansion', playerHousing: false }),
 ] as const;
 
 const byId = new Map(PLANETS.map((p) => [p.id, p]));

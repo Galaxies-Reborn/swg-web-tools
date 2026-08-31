@@ -146,4 +146,12 @@ export const MAPPABLE_PLANETS = [
   'endor',
   'lok',
   'yavin4',
+  // Baked from the same client, but not Pre-CU ground. Kashyyyk is 8 km rather
+  // than the usual 16, which the map reads from each planet's own bake rather
+  // than assuming. Mustafar's terrain covers the full 16 km while the travel
+  // table gives its playable width as 8,000 -- so the outer ground it draws is
+  // real terrain that a player could never stand on.
+  'taanab',
+  'mustafar',
+  'kashyyyk',
 ] as const;

@@ -140,3 +140,63 @@ def test_generated_height_matches_where_the_game_put_its_objects(vfs, planet: st
     # And it is not median-zero by luck: most samples should be dead on.
     exact = sum(1 for e in errors if abs(e) < 1e-3)
     assert exact > len(errors) * 0.25
+
+
+@needs_client
+def test_an_empty_baked_map_is_treated_as_absent() -> None:
+    """taanab ships the baked-terrain structure with nothing in it.
+
+    Its WMAP and SMAP chunks are present but zero length, and the header
+    declares mapW 0, chunkW 0 and a 0x0 grid. That is not "no water anywhere",
+    it is no answer at all -- and taking it at face value divided by the zero
+    chunk width and killed a whole-planet bake four seconds in.
+
+    An empty map has to read as absent, so callers fall back to writing no
+    flags rather than crashing.
+    """
+    from tre_extract.vfs import build_vfs
+
+    vfs = build_vfs(str(CLIENT), loose_dirs=[])
+    terrain = Terrain(vfs.read("terrain/taanab.trn"))
+
+    assert terrain.baked is None, "an empty baked map must not present as usable"
+    # The height generator is unaffected by any of this.
+    assert isinstance(terrain.height(0.0, 0.0), float)
+
+
+@needs_client
+def test_a_real_baked_map_still_answers() -> None:
+    """The guard must not throw away the maps that do carry data."""
+    from tre_extract.vfs import build_vfs
+
+    vfs = build_vfs(str(CLIENT), loose_dirs=[])
+    terrain = Terrain(vfs.read("terrain/tatooine.trn"))
+
+    assert terrain.baked is not None
+    assert terrain.baked["chunkW"] > 0
+    assert len(terrain.baked["water"]) > 0
+    # Reading a bit is what the bake does per sample; it must not raise.
+    assert terrain.bakedBit("water", 0.0, 0.0) in (True, False)
+
+
+@needs_client
+def test_every_shipped_planet_can_be_sampled_without_raising() -> None:
+    """The bug reached a two-hour job because nothing had asked this question.
+
+    One sample per scene is enough: the failure was at the first row, not a
+    rare coordinate, and this is the cheap check that would have caught it.
+    """
+    from tre_extract.vfs import build_vfs
+
+    vfs = build_vfs(str(CLIENT), loose_dirs=[])
+    scenes = [
+        "tatooine", "naboo", "corellia", "rori", "talus",
+        "dantooine", "dathomir", "endor", "lok", "yavin4",
+        "taanab", "mustafar", "kashyyyk",
+    ]
+    for scene in scenes:
+        terrain = Terrain(vfs.read(f"terrain/{scene}.trn"))
+        terrain.height(0.0, 0.0)
+        if terrain.baked is not None:
+            terrain.bakedBit("water", 0.0, 0.0)
+            terrain.bakedBit("slope", 0.0, 0.0)

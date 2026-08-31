@@ -637,8 +637,15 @@ class Terrain:
         s.baked=None
         if bt and bt[0].find("WMAP") is not None:
             b=bt[0]; br=b.chunk("DATA")
-            s.baked={"mapW": br.f32(), "chunkW": br.f32(), "w": br.i32(), "h": br.i32(),
+            baked={"mapW": br.f32(), "chunkW": br.f32(), "w": br.i32(), "h": br.i32(),
                          "water": b.find("WMAP").data, "slope": b.find("SMAP").data}
+            # A planet may ship the structure with nothing in it -- taanab
+            # declares mapW 0, chunkW 0, a 0x0 grid and two empty bitmaps.
+            # That is not "no water everywhere", it is no answer at all, and
+            # treating it as present divided by the zero chunk width and took
+            # the whole bake down with it. An empty map is an absent one.
+            if baked["chunkW"] > 0 and baked["w"] > 0 and baked["h"] > 0 and baked["water"]:
+                s.baked=baked
     def bakedBit(s, which, x, z):
         b=s.baked; half=int((b["mapW"]/b["chunkW"])*0.5)
         cx=math.floor(x/b["chunkW"]) if x>=0 else math.ceil(x/b["chunkW"])-1

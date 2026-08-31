@@ -253,7 +253,7 @@ export default function CityPlannerPage() {
         setTerrainNote(text.trim() ? 'Could not read a coordinate from that.' : null);
         return;
       }
-      const planet = text.match(/\b(tatooine|naboo|corellia|rori|talus|dantooine|dathomir|endor|lok|yavin4)\b/i);
+      const planet = text.match(/\b(tatooine|naboo|corellia|rori|talus|dantooine|dathomir|endor|lok|yavin4|taanab|mustafar|kashyyyk)\b/i);
       if (planet) setScene(planet[1].toLowerCase());
       // Three numbers means X Y Z with height in the middle; two means X Z.
       const [x, z] =
